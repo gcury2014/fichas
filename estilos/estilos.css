@@ -46,10 +46,25 @@
     width: 70%;
 }
 
-img{
+.img_logo_chico{
+   /** background-color: rgb(211, 211, 211,.6);**/
+    box-shadow:2px 2px black;
+}
+
+.imagen{
     margin: 15px 0 0 20px;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;   
+}
+
+.img_menu{
+    background-color: rgb(155, 153, 153);
+    border-radius: 20px;
+}
+
+.home{
+    position: relative;
+    margin: 0 10px 0 0;
 }
 
 .usuario {
@@ -102,22 +117,33 @@ img{
     background-repeat: no-repeat;
     background-attachment: fixed; 
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
 .encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
     font-size: 40px;
     text-align: center;
     background-color: cornflowerblue;
-
     opacity: 0.6;
 }
 
 .cuerpo_principal{
     margin-top: 400px;
     margin-bottom: 40px;
+}
+
+.menu_principal{
     display: flex;
     flex-direction: row;
     justify-content:space-around;
+    background-color:rgb(168, 179, 167, .6) ;
+}
+
+.menu_secundario{
+    height: 100px;
 }
 
 .cuerpo_agenda{
@@ -128,10 +154,10 @@ img{
     justify-content:space-around;
 }
 
-.cuerpo_principal img{
+/*.cuerpo_principal img{
     border: 3px solid greenyellow;
     border-radius: 15px;
-}
+}*/
 
 .cuerpo_agenda img{
     border: 3px solid greenyellow;
@@ -200,6 +226,10 @@ img{
     text-align: center;
 }
 
+.ajuste{
+    margin-top: 90px;
+}
+
 .pie_derecha{
     display: flex;
     flex-direction: row-reverse;
@@ -264,6 +294,7 @@ img{
 
 a{
     text-decoration: none;
+    width: 100px;
 }
 
 /**************************************************
@@ -271,8 +302,8 @@ a{
 .cartel{
    background-color: rgb(200, 223, 223,0.9); 
    text-align: center;
-   width: 200px;
-   margin: 5px auto;
+   width: 200px; 
+   margin: 5px auto 20px auto;
 }
 .recuadro_mes{
     border: 3px solid black;
@@ -363,7 +394,7 @@ a{
 #grid{
     display:grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100px 150px 100px 100px 80px;
+    grid-template-rows: 100px 150px 100px 100px 60px;
     grid-template-areas: 
                         "titulo_grilla       titulo_grilla       titulo_grilla       titulo_grilla"
                         "subdireccion        subdireccion        subdireccion        subdireccion"
@@ -372,7 +403,7 @@ a{
                         "pie_grilla          pie_grilla          pie_grilla          pie_grilla";
 
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid black;
@@ -483,14 +514,96 @@ article#emp_adm{
 }
 
 section#pie_grilla{
+    
     background-color: grey;
     grid-area: pie_grilla;
     border: 1px solid white;
     border-bottom-left-radius: 5px ;
     border-bottom-right-radius: 5px ;
+
 }
 
-.derecha{
-    margin-left: 1050px;
+.imgs_pie_grilla{
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    justify-content:space-between;
+    
+}
+
+.izquierda{
+    margin-left: 50px;
+}
+
+
+
+
+#grid_fichas{
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 100px;
+    grid-template-areas: "link1 link2 link3";
+    width: 100%;
+    justify-items:center;
+    background-color:rgb(168, 179, 167, .6) ;
+}
+
+div#link1{
+    grid-area: link1;
+}
+
+div#link2{
+    grid-area: link2;
+}
+
+div#link3{
+    grid-area: link3;
+}
+
+.engranaje1{
+    /**position: relative;**/
+    animation-name: rotar1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    /**display: inline-block;**/
+    animation-timing-function: linear;
+    color: blue;
+}
+
+.engranaje2{
+    margin: 0;
+    margin-left: -160px;
+    position: relative;    
+    animation-name: rotar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    display: inline-block;
+    animation-timing-function: linear;
+    color: blue;
+}
+.engranaje3{
+    margin-left: -15px;
+}
+
+
+
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotar1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
