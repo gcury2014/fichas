@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.fondo_logo {
+  background-color: midnightblue; }
+
+.encuadrar {
+  border: 3px solid grey;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0048cd;
+  border-radius: 15px;
+  width: 400px; }
