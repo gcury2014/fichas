@@ -1,7 +1,226 @@
+<<<<<<< HEAD
+=======
+/*************** PANTALLA DESKTOP ************************/
+@media (min-width: 950px) {
+  .cuerpo_principal { 
+  margin-top: 400px;
+  margin-bottom: 40px; }   
+
+
+/***************GRILLA ESTRUCTURA DESKTOP************************/
+  #grid { 
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 150px 100px 100px 80px;
+    grid-template-areas: "titulo_grilla       titulo_grilla       titulo_grilla       titulo_grilla"
+                         "subdireccion        subdireccion        subdireccion        subdireccion"
+                         "depto_hard          depto_soft          depto_adm           sop_ext"
+                         "emp_hard            emp_soft            emp_adm             sop_ext"
+                         "pie_grilla          pie_grilla          pie_grilla          pie_grilla";
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    border-radius: 3px;
+    width: 1200px;
+    height: 100%; }
+
+  .grilla { 
+    font-style: italic; }
+
+  .grilla a{  
+    text-decoration: none;
+    color: rgb(75, 72, 72);}
+
+  .grilla a:hover{  
+    color: rgb(0, 0, 0);
+  }
+  .tit_sop_ext {  
+    margin-top: 60px;
+    text-align: center; }
+
+  .fuentes_areas p {  
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 20px; }
+
+  .tit_subdireccion p { 
+    margin-left: 250px;
+    margin-right: 250px; }
+
+  section#titulo_grilla { 
+    background-color: #494c55;
+    grid-area: titulo_grilla;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    border: 1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+
+  section#subdireccion {  
+    background-color: #9ea79d;
+    grid-area: subdireccion;
+    padding: 3%;
+    text-align: center;
+  font-size: 30px;
+    border: 1px solid white; 
+    padding-top:30px;}
+
+  section#sop_ext { 
+    background-color: #8da08b;
+    grid-area: sop_ext;
+    border: 1px solid white; }
+
+  section#depto_hard {  
+    background-color: #a8b3a7;
+    grid-area: depto_hard;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+
+  section#depto_soft {  
+    background-color: #a8b3a7;
+    grid-area: depto_soft;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+
+  section#depto_adm { 
+    background-color: #a8b3a7;
+    grid-area: depto_adm;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+
+  article#emp_hard {  
+    background-color: #a8b3a7;
+    grid-area: emp_hard;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+
+  article#emp_soft {  
+    background-color: #a8b3a7;
+    grid-area: emp_soft;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+
+  article#emp_adm { 
+    background-color: #a8b3a7;
+    grid-area: emp_adm;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+
+  section#pie_grilla {  
+    padding-top: 20px;
+    background-color: grey;
+    grid-area: pie_grilla;
+    border: 1px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+  .logo_derecha { 
+    margin-left: 1000px; }
+
+  .logo_izquierda {
+    margin-left: 30px; }
+
+  .mostrar_estructura{
+    display:none;
+}
+}
+
+/*************** PANTALLA CELULARES ************************/
+@media (max-width: 950px) {
+  .grilla_engranaje {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    max-width: 450px;
+    grid-template-rows: 100px;
+    grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin:0}
+  
+  .sub_titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;}
+    
+  .titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px; } 
+  
+  .ocultar_grilla{
+    display: none;
+  }
+
+  .ocultar_estructura{
+    display: none;
+  }
+/***********ESTRUCTURA JERARQUICA GENERAL PARA CELULARES *************/
+.mostrar_estructura h2{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mostrar_estructura a{
+  text-decoration: none;
+  color: grey;
+}
+
+.mostrar_estructura a:hover{
+  color: black;
+}
+
+.boton_subdireccion{
+  background-color: rgb(153, 181, 233);
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid black;
+  box-shadow: 2px 2px grey;
+  border-radius: 5px;
+}
+
+.boton_departamento{
+  width: 200px;
+  height: 70px;
+  background-color: rgb(97, 195, 202);
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid black;
+  box-shadow: 2px 2px grey;
+  border-radius: 5px;
+}
+
+.nivel1{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+} 
+}
+/******************************************************/ 
+>>>>>>> bd5e5f922c88ee8ad12f75571231b7a46fbc34be
 * {
   margin: 0;
   padding: 0; }
 
+<<<<<<< HEAD
+=======
+body{
+  width: 100%;
+}
+
+>>>>>>> bd5e5f922c88ee8ad12f75571231b7a46fbc34be
 .fondo_logo {
   background-color: midnightblue; }
 
@@ -13,3 +232,207 @@
   background-color: #0048cd;
   border-radius: 15px;
   width: 400px; }
+<<<<<<< HEAD
+=======
+
+.encuadrar {
+  border: 3px solid grey;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #0048cd;
+  border-radius: 15px;
+  width: 400px; }
+
+.centrado_login {
+  max-width: 50%; }
+
+.fondo_logo {
+  background-color: midnightblue; }
+
+.titulo {
+  text-align: center;
+  margin-top: 10px;
+  color: white; }
+
+.titulo_pagina {
+  font-weight: bold;
+  font-size: 50px; 
+  color: black;
+  margin-bottom: 0;}
+
+.sub_titulo_pagina {
+  text-align: center;
+  font-size: 40px;
+  color: white; }
+
+.sub_titulo {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+  color: white; }
+
+.login {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+.login input {
+  display: block;
+  margin-top: 15px;
+  width: 270px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.usuario {
+  width: 100%;
+  display: inline-flex;
+  margin-left: 30px; }
+
+.contrasena {
+  width: 100%;
+  display: inline-flex;
+  margin-left: 30px; }
+
+.enviar {
+  width: 270px;
+  height: 40px;
+  margin-left: 60px;
+  border-radius: 15px;
+  background-color: navy;
+  color: white; }
+
+.restablecer {
+  width: 270px;
+  height: 40px;
+  margin-left: 60px;
+  border-radius: 15px;
+  background-color: indigo;
+  color: white; }
+
+.img_logo {
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../recursos/imagenes/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 250px;
+  width: 70%; }
+
+.img_login{
+    margin: 15px 0 0 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px; 
+}
+
+.logo_ficha {
+  margin: 0; }
+
+.encabezado {
+  font-size: 40px;
+  text-align: center;
+  background-color: cornflowerblue;
+  opacity: 0.6; 
+}
+
+.fondo_general {
+  background-image: url(../recursos/imagenes/congreso2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif; }
+
+.cuerpo_principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.pie_derecha {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 70px;
+  text-align: right; }
+
+.menu_principal{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  background-color:rgba(211, 211, 211, 0.7);
+  max-width: 100%;
+}
+
+
+/*******************GRILLA ENGRANAJES*******************/
+.grilla_engranaje {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 100px;
+  grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
+  margin-top: 450px;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  height: 100%; }
+
+  div#engranaje_izquierda {
+    background-color: #9ea79d;
+    grid-area: engranaje_izquierda;
+    text-align: center;
+    font-size: 30px;  
+    padding-top:30px;}
+
+div#engranaje_centro {
+  background-color: #9ea79d;
+  grid-area: engranaje_centro;
+  padding: 3%;
+  text-align: center;
+  font-size: 30px;
+  padding-top:30px;}
+
+div#engranaje_derecho {
+  background-color: #9ea79d;
+  grid-area: engranaje_derecho;
+  padding: 3%;
+  text-align: center;
+  font-size: 30px;
+  padding-top:30px;}  
+/************************************************/
+/*************ANIMACION ENGRANAJES***************/
+.engranaje2{
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-timing-function: linear;
+}
+
+.engranaje3{
+  margin-left: -10px;
+}
+
+.engranaje1{
+  animation-name: rotar1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-timing-function: linear;
+}
+
+@keyframes rotar {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes rotar1 {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(-360deg);
+  }
+/************************************************/
+}
+
+>>>>>>> bd5e5f922c88ee8ad12f75571231b7a46fbc34be
