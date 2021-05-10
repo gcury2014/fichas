@@ -1,0 +1,103 @@
+.fondo_logo {
+    background-color: midnightblue; }
+  
+.encuadrar {
+    border: 3px solid grey;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0048cd;
+    border-radius: 15px;
+    width: 400px; }
+  
+.centrado_login {
+    max-width: 50%; }
+  
+.fondo_logo {
+    background-color: midnightblue; }
+  
+.titulo {
+    text-align: center;
+    margin-top: 10px;
+    color: white; }
+  
+.titulo_pagina {
+    font-weight: bold;
+    font-size: 50px; 
+    color: black;
+    margin-bottom: 0;}
+  
+.sub_titulo_pagina {
+    text-align: center;
+    font-size: 40px;
+    color: white; }
+  
+.sub_titulo {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    color: white; }
+
+    
+.login {
+    margin-top: 0;
+    margin-bottom: 30px; }
+  
+.login input {
+    display: block;
+    margin-top: 15px;
+    width: 270px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; }
+  
+.usuario {
+    width: 100%;
+    display: inline-flex;
+    margin-left: 30px; }
+  
+.contrasena {
+    width: 100%;
+    display: inline-flex;
+    margin-left: 30px; }
+  
+.enviar {
+    width: 270px;
+    height: 40px;
+    margin-left: 60px;
+    border-radius: 15px;
+    background-color: navy;
+    color: white; }
+
+.restablecer {
+    width: 270px;
+    height: 40px;
+    margin-left: 60px;
+    border-radius: 15px;
+    background-color: indigo;
+    color: white; }
+      
+.img_logo {
+margin-left: auto;
+margin-right: auto;
+background: url(../recursos/imagenes/logo.png);
+background-repeat: no-repeat;
+background-size: contain;
+height: 250px;
+width: 70%; }
+      
+.img_login{
+    margin: 15px 0 0 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;}
+
+.fondo_general {
+    background-image: url(../recursos/imagenes/congreso2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif; }
+      
+.cuerpo_principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }

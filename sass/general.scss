@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0; }
+  
+  body{
+    width: 100%;
+  }
+
+  .division{
+    box-shadow: 2px 2px grey;
+    background-color: rgba(211, 211, 211, 0.7);
+  }
+  
+  .logo_ficha {
+    margin: 0; } 
+  
+.blackiconcolor {
+  color:black;}
+
+.menu_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color:rgba(211, 211, 211, 0.7);
+    max-width: 100%;
+  }

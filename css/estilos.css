@@ -1,231 +1,11 @@
-/*************** PANTALLA DESKTOP ************************/
-@media (min-width: 950px) {
-  .cuerpo_principal { 
-  margin-top: 400px;
-  margin-bottom: 40px; }   
-
-
-/***************GRILLA ESTRUCTURA DESKTOP************************/
-  #grid { 
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 100px 150px 100px 100px 80px;
-    grid-template-areas: "titulo_grilla       titulo_grilla       titulo_grilla       titulo_grilla"
-                         "subdireccion        subdireccion        subdireccion        subdireccion"
-                         "depto_hard          depto_soft          depto_adm           sop_ext"
-                         "emp_hard            emp_soft            emp_adm             sop_ext"
-                         "pie_grilla          pie_grilla          pie_grilla          pie_grilla";
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-    box-shadow: 2px 2px grey;
-    border-radius: 3px;
-    width: 1200px;
-    height: 100%; }
-
-  .grilla { 
-    font-style: italic; }
-
-  .grilla a{  
-    text-decoration: none;
-    color: rgb(75, 72, 72);}
-
-  .grilla a:hover{  
-    color: rgb(0, 0, 0);
-  }
-  .tit_sop_ext {  
-    margin-top: 60px;
-    text-align: center; }
-
-  .fuentes_areas p {  
-    margin-left: 90px;
-    margin-right: 90px;
-    font-size: 20px; }
-
-  .tit_subdireccion p { 
-    margin-left: 250px;
-    margin-right: 250px; }
-
-  section#titulo_grilla { 
-    background-color: #494c55;
-    grid-area: titulo_grilla;
-    text-align: center;
-    padding: 15px;
-    color: white;
-    font-size: 50px;
-    font-style: italic;
-    border: 1px solid white;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
-
-  section#subdireccion {  
-    background-color: #9ea79d;
-    grid-area: subdireccion;
-    padding: 3%;
-    text-align: center;
-  font-size: 30px;
-    border: 1px solid white; 
-    padding-top:30px;}
-
-  section#sop_ext { 
-    background-color: #8da08b;
-    grid-area: sop_ext;
-    border: 1px solid white; }
-
-  section#depto_hard {  
-    background-color: #a8b3a7;
-    grid-area: depto_hard;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
-
-  section#depto_soft {  
-    background-color: #a8b3a7;
-    grid-area: depto_soft;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
-
-  section#depto_adm { 
-    background-color: #a8b3a7;
-    grid-area: depto_adm;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
-
-  article#emp_hard {  
-    background-color: #a8b3a7;
-    grid-area: emp_hard;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
-
-  article#emp_soft {  
-    background-color: #a8b3a7;
-    grid-area: emp_soft;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
-
-  article#emp_adm { 
-    background-color: #a8b3a7;
-    grid-area: emp_adm;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
-
-  section#pie_grilla {  
-    padding-top: 20px;
-    background-color: grey;
-    grid-area: pie_grilla;
-    border: 1px solid white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
-
-  .logo_derecha { 
-    margin-left: 1000px; }
-
-  .logo_izquierda {
-    margin-left: 30px; }
-
-  .mostrar_estructura{
-    display:none;
-}
-}
-
-/*************** PANTALLA CELULARES ************************/
-@media (max-width: 950px) {
-  .grilla_engranaje {
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    max-width: 450px;
-    grid-template-rows: 100px;
-    grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin:0}
-  
-  .sub_titulo {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 30px;}
-    
-  .titulo {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 10px; } 
-  
-  .ocultar_grilla{
-    display: none;
-  }
-
-  .ocultar_estructura{
-    display: none;
-  }
-/***********ESTRUCTURA JERARQUICA GENERAL PARA CELULARES *************/
-.mostrar_estructura h2{
-  font-size: 2em;
-  font-weight: bold;
+.encabezado {
+  font-size: 40px;
   text-align: center;
-}
-
-.mostrar_estructura a{
-  text-decoration: none;
-  color: grey;
-}
-
-.mostrar_estructura a:hover{
-  color: black;
-}
-
-.boton_subdireccion{
-  background-color: rgb(153, 181, 233);
-  font-weight: bold;
-  font-size: 1em;
-  border: 1px solid black;
-  box-shadow: 2px 2px grey;
-  border-radius: 5px;
-}
-
-.boton_departamento{
-  width: 200px;
-  height: 70px;
-  background-color: rgb(97, 195, 202);
-  font-weight: bold;
-  font-size: 1em;
-  border: 1px solid black;
-  box-shadow: 2px 2px grey;
-  border-radius: 5px;
-}
-
-.nivel1{
-  display:flex;
-  flex-direction: row;
-  justify-content:space-around;
-} 
-}
-/******************************************************/ 
-* {
-  margin: 0;
-  padding: 0; }
-
-body{
-  width: 100%;
-}
+  background-color: cornflowerblue;
+  opacity: 0.6; }
 
 .fondo_logo {
   background-color: midnightblue; }
-
-.encuadrar {
-  border: 3px solid grey;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #0048cd;
-  border-radius: 15px;
-  width: 400px; }
 
 .encuadrar {
   border: 3px solid grey;
@@ -249,9 +29,9 @@ body{
 
 .titulo_pagina {
   font-weight: bold;
-  font-size: 50px; 
+  font-size: 50px;
   color: black;
-  margin-bottom: 0;}
+  margin-bottom: 0; }
 
 .sub_titulo_pagina {
   text-align: center;
@@ -310,21 +90,10 @@ body{
   height: 250px;
   width: 70%; }
 
-.img_login{
-    margin: 15px 0 0 20px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; 
-}
-
-.logo_ficha {
-  margin: 0; }
-
-.encabezado {
-  font-size: 40px;
-  text-align: center;
-  background-color: cornflowerblue;
-  opacity: 0.6; 
-}
+.img_login {
+  margin: 15px 0 0 20px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
 
 .fondo_general {
   background-image: url(../recursos/imagenes/congreso2.jpg);
@@ -338,38 +107,234 @@ body{
   flex-direction: row;
   justify-content: space-around; }
 
-.pie_derecha {
-  display: flex;
-  flex-direction: row-reverse;
-  margin-right: 70px;
-  text-align: right; }
+.margen_superior {
+  margin-top: 140px; }
 
-.menu_principal{
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-  background-color:rgba(211, 211, 211, 0.7);
-  max-width: 100%;
-}
+.twiter {
+  background-color: #14e4ff; }
 
+.facebook {
+  background-color: #353cb8; }
 
-/*******************GRILLA ENGRANAJES*******************/
-.grilla_engranaje {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 100px;
-  grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
-  margin-top: 450px;
-  margin-bottom: 50px;
-  margin-left: 50px;
-  height: 100%; }
+.in {
+  background-color: #5e75f8; }
 
-  div#engranaje_izquierda {
-    background-color: #9ea79d;
-    grid-area: engranaje_izquierda;
+.mail {
+  background-color: #bac0cf; }
+
+.whatsapp {
+  background-color: #21f579; }
+
+/*************** PANTALLA DESKTOP ************************/
+/*********************************************************/
+@media screen and (min-width: 992px) {
+  .grilla_engranaje {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100px;
+    grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
+    margin-top: 450px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    height: 100%;
+    margin-left: 260px; }
+  .cuerpo_principal {
+    margin-top: 400px;
+    margin-bottom: 100px; }
+  .card_desk {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
+  /***************GRILLA ESTRUCTURA DESKTOP************************/
+  #grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 150px 100px 100px 80px;
+    grid-template-areas: "titulo_grilla       titulo_grilla       titulo_grilla       titulo_grilla" "subdireccion        subdireccion        subdireccion        subdireccion" "depto_hard          depto_soft          depto_adm           sop_ext" "emp_hard            emp_soft            emp_adm             sop_ext" "pie_grilla          pie_grilla          pie_grilla          pie_grilla";
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    border-radius: 3px;
+    width: 1200px;
+    height: 100%; }
+  .grilla {
+    font-style: italic; }
+  .grilla a {
+    text-decoration: none;
+    color: #4b4848; }
+  .grilla a:hover {
+    color: black; }
+  .tit_sop_ext {
+    margin-top: 60px;
+    text-align: center; }
+  .fuentes_areas p {
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 20px; }
+  .tit_subdireccion p {
+    margin-left: 250px;
+    margin-right: 250px; }
+  section#titulo_grilla {
+    background-color: #494c55;
+    grid-area: titulo_grilla;
     text-align: center;
-    font-size: 30px;  
-    padding-top:30px;}
+    padding: 15px;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    border: 1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  section#subdireccion {
+    background-color: #9ea79d;
+    grid-area: subdireccion;
+    padding: 3%;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid white;
+    padding-top: 30px; }
+  section#sop_ext {
+    background-color: #8da08b;
+    grid-area: sop_ext;
+    border: 1px solid white; }
+  section#depto_hard {
+    background-color: #a8b3a7;
+    grid-area: depto_hard;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+  section#depto_soft {
+    background-color: #a8b3a7;
+    grid-area: depto_soft;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+  section#depto_adm {
+    background-color: #a8b3a7;
+    grid-area: depto_adm;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+  article#emp_hard {
+    background-color: #a8b3a7;
+    grid-area: emp_hard;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+  article#emp_soft {
+    background-color: #a8b3a7;
+    grid-area: emp_soft;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+  article#emp_adm {
+    background-color: #a8b3a7;
+    grid-area: emp_adm;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white; }
+  section#pie_grilla {
+    padding-top: 20px;
+    background-color: grey;
+    grid-area: pie_grilla;
+    border: 1px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  .logo_derecha {
+    margin-left: 1000px; }
+  .logo_izquierda {
+    margin-left: 30px; }
+  .mostrar_estructura {
+    display: none; } }
+
+/*************** PANTALLA CELULARES ************************/
+@media screen and (max-width: 950px) {
+  .grilla_engranaje {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 450px;
+    grid-template-rows: 100px;
+    grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
+    margin-top: 350px;
+    margin-bottom: 50px;
+    margin-left: 0; }
+  .cuerpo_principal {
+    margin-bottom: 160px; }
+  .separacion {
+    margin-top: 20px; }
+  .sub_titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px; }
+  .titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px; }
+  .ocultar_grilla {
+    display: none; }
+  .ocultar_estructura {
+    display: none; }
+  /***********ESTRUCTURA JERARQUICA  PARA CELULARES *************/
+  .card_celu {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto; }
+  .mostrar_estructura h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center; }
+  .mostrar_estructura a {
+    text-decoration: none;
+    color: grey; }
+  .mostrar_estructura a:hover {
+    color: black; }
+  .boton_subdireccion {
+    background-color: #99b5e9;
+    font-weight: bold;
+    font-size: 1em;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    border-radius: 5px; }
+  .boton_departamento {
+    width: 200px;
+    height: 70px;
+    background-color: #61c3ca;
+    font-weight: bold;
+    font-size: 1em;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    border-radius: 5px; }
+  .nivel1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+  .nivel2 {
+    margin-bottom: 170px; } }
+
+/***************************************************************/
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes rotar1 {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+
+/******************* ENGRANAJES*******************/
+div#engranaje_izquierda {
+  background-color: #9ea79d;
+  grid-area: engranaje_izquierda;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px; }
 
 div#engranaje_centro {
   background-color: #9ea79d;
@@ -377,7 +342,7 @@ div#engranaje_centro {
   padding: 3%;
   text-align: center;
   font-size: 30px;
-  padding-top:30px;}
+  padding-top: 30px; }
 
 div#engranaje_derecho {
   background-color: #9ea79d;
@@ -385,45 +350,46 @@ div#engranaje_derecho {
   padding: 3%;
   text-align: center;
   font-size: 30px;
-  padding-top:30px;}  
-/************************************************/
-/*************ANIMACION ENGRANAJES***************/
-.engranaje2{
+  padding-top: 30px; }
+
+.engranaje2 {
   animation-name: rotar;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
-  animation-timing-function: linear;
-}
+  animation-timing-function: linear; }
 
-.engranaje3{
-  margin-left: -10px;
-}
+.engranaje3 {
+  margin-left: -10px; }
 
-.engranaje1{
+.engranaje1 {
   animation-name: rotar1;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
-  animation-timing-function: linear;
-}
+  animation-timing-function: linear; }
 
-@keyframes rotar {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(360deg);
-  }
-}
-
-@keyframes rotar1 {
-  0% {
-      transform: rotate(0deg);
-  }
-  100% {
-      transform: rotate(-360deg);
-  }
 /************************************************/
-}
+* {
+  margin: 0;
+  padding: 0; }
 
+body {
+  width: 100%; }
+
+.division {
+  box-shadow: 2px 2px grey;
+  background-color: rgba(211, 211, 211, 0.7); }
+
+.logo_ficha {
+  margin: 0; }
+
+.blackiconcolor {
+  color: black; }
+
+.menu_principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(211, 211, 211, 0.7);
+  max-width: 100%; }

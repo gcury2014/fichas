@@ -1,0 +1,62 @@
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotar1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+  }
+
+  /******************* ENGRANAJES*******************/
+  div#engranaje_izquierda {
+    background-color: #9ea79d;
+    grid-area: engranaje_izquierda;
+    text-align: center;
+    font-size: 30px;  
+    padding-top:30px;}
+
+div#engranaje_centro {
+  background-color: #9ea79d;
+  grid-area: engranaje_centro;
+  padding: 3%;
+  text-align: center;
+  font-size: 30px;
+  padding-top:30px;}
+
+div#engranaje_derecho {
+  background-color: #9ea79d;
+  grid-area: engranaje_derecho;
+  padding: 3%;
+  text-align: center;
+  font-size: 30px;
+  padding-top:30px;}  
+
+.engranaje2{
+  animation-name: rotar;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-timing-function: linear;
+}
+
+.engranaje3{
+  margin-left: -10px;
+}
+
+.engranaje1{
+  animation-name: rotar1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-timing-function: linear;
+}
+ /************************************************/

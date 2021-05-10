@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css" >
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,300;1,500;1,900&display=swap" rel="stylesheet">   
     <title>ESTRUCTURA JERARQUICA</title>
@@ -31,6 +32,9 @@
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link" href="index.html">Salida</a>
+                        </li>   
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" href="index.html"><span class="fas fa-sitemap"></span></a>
                         </li>                    
                     </ul>
                 </div>  
@@ -38,55 +42,82 @@
         </div>
 <!----------------------------------------------------------------------->
 <!-------------------GRILLA ESTRUCTURA PANTALLA DESKTOP----------------------->
-    <main>
-        <div class="grilla ocultar_grilla" id="grid">
-            <section class="tit_grilla" id="titulo_grilla"><p>Estructura Jerarquica</p></section>
-            <section class="tit_subdireccion" id="subdireccion"><a href="empleados_sector_hard.html"><p>SUBDIRECCION ATENCION AL USUARIO Y SOPORTE TECNICO</p></a></section>
-            <section id="sop_ext">
-                <div class="tit_sop_ext fuentes_areas">
-                    <p>Soporte</p>
-                    <p>Externo</p>
+        <main>
+            <div class="grilla ocultar_grilla" id="grid">
+                <section id="titulo_grilla"><p>Estructura Jerarquica</p></section>
+                <section class="tit_subdireccion" id="subdireccion"><a href="empleados_sector_hard.html"><p>SUBDIRECCION ATENCION AL USUARIO Y SOPORTE TECNICO</p></a></section>
+                <section id="sop_ext">
+                    <div class="tit_sop_ext fuentes_areas">
+                        <p>Soporte</p>
+                        <p>Externo</p>
+                    </div>
+                </section>
+                <section class="fuentes_areas" id="depto_hard"><a href="empleados_sector_hard.html"><p>Departamento Hatdware</p></a></section>
+                <section class="fuentes_areas" id="depto_soft"><a href="empleados_sector_hard.html"><p>Departamento Software</p></a></section>
+                <section class="fuentes_areas" id="depto_adm"><a href="empleados_sector_hard.html"><p>Departamento Administrativo</p></a></section>
+                <article class="fuentes_areas" id="emp_hard"><p>Empleados Hardware</p></article>
+                <article class="fuentes_areas" id="emp_soft"><p>Empleados Software</p></article>
+                <article class="fuentes_areas" id="emp_adm"><p>Empleados Administrativos</p></article>
+                <section class="fuentes_areas pt-3" id="pie_grilla">
+                    <a href="principal.html">
+                        <img class="logo_izquierda" class="izquierda" src="./recursos/imagenes/logo_fichas.png" width="70" height="40" alt="logo">
+                    </a>
+                    <a href="principal.html">
+                        <img class="logo_derecha" src="./recursos/imagenes/logo_fichas.png" width="70" height="40">
+                    </a>
+                </section>   
+            </div>
+    <!-------------------GRILLA ESTRUCTURA PANTALLA RESPONSIVE----------------------->
+            <div class="mostrar_estructura row">
+                <h2 class="col-12 text-center division">Estructura Jerarquica</h2>
+                <button class="boton_subdireccion col-6 ml-auto mr-auto mt-3 mb-5">
+                    <a href="empleados_sector_hard.html"><p class="mt-2">SUBDIRECCION ATENCION AL USUARIO Y SOPORTE TECNICO</p></a>
+                </button>
+                <div class="nivel1 col-12">
+                    <button class="boton_departamento">
+                        <a href="empleados_sector_hard.html"><p class="mt-2 ml-5 mr-5">Departamento Hardware</p></a> 
+                    </button>
+                    <button class="boton_departamento">
+                        <a href="empleados_sector_hard.html"><p class="mt-2 ml-5 mr-5">Departamento Software</p></a> 
+                    </button>
                 </div>
-            </section>
-            <section class="fuentes_areas" id="depto_hard"><a href="empleados_sector_hard.html"><p>Departamento Hatdware</p></a></section>
-            <section class="fuentes_areas" id="depto_soft"><a href="empleados_sector_hard.html"><p>Departamento Software</p></a></section>
-            <section class="fuentes_areas" id="depto_adm"><a href="empleados_sector_hard.html"><p>Departamento Administrativo</p></a></section>
-            <article class="fuentes_areas" id="emp_hard"><p>Empleados Hardware</p></article>
-            <article class="fuentes_areas" id="emp_soft"><p>Empleados Software</p></article>
-            <article class="fuentes_areas" id="emp_adm"><p>Empleados Administrativos</p></article>
-            <section class="fuentes_areas pt-3" id="pie_grilla">
-                <a href="principal.html">
-                    <img class="logo_izquierda" class="izquierda" src="./recursos/imagenes/logo_fichas.png" width="70" height="40" alt="logo">
-                </a>
-                <a href="principal.html">
-                    <img class="logo_derecha" src="./recursos/imagenes/logo_fichas.png" width="70" height="40">
-                </a>
-            </section>   
-        </div>
-<!-------------------GRILLA ESTRUCTURA PANTALLA RESPONSIVE----------------------->
-        <div class="mostrar_estructura row">
-            <h2 class="col-12 text-center">Estructura Jerarquica</h2>
-            <button class="boton_subdireccion col-6 ml-auto mr-auto mt-3 mb-5">
-                <a href="empleados_sector_hard.html"><p class="mt-2">SUBDIRECCION ATENCION AL USUARIO Y SOPORTE TECNICO</p></a>
-            </button>
-            <div class="nivel1 col-12">
-                <button class="boton_departamento">
-                    <a href="empleados_sector_hard.html"><p class="mt-2 ml-5 mr-5">Departamento Hardware</p></a> 
-                </button>
-                <button class="boton_departamento">
-                    <a href="empleados_sector_hard.html"><p class="mt-2 ml-5 mr-5">Departamento Software</p></a> 
-                </button>
             </div>
-        </div>
-        <div class="mostrar_estructura row">
-            <div class="nivel2 ml-auto mr-auto mt-3">
-                <button class="boton_departamento">
-                    <a href="empleados_sector_hard.html"><p class="mt-2 ml-5 mr-5">Departamento Administrativo</p></a> 
-                </button>
+            <div class="mostrar_estructura row">
+                <div class="nivel2 ml-auto mr-auto mt-3">
+                    <button class="boton_departamento">
+                        <a href="empleados_sector_hard.html"><p class="mt-2 ml-5 mr-5">Departamento Administrativo</p></a> 
+                    </button>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
 <!------------------------------------------------------------------------------------>
+        <footer class="btn-group row col-12 p-0 m-0" role="group" aria-label="Basic example">         
+            <button type="button" class="btn redes twiter">
+                <a href="#">
+                    <span class="fab fa-twitter fa-lg blackiconcolor"></span>
+                </a>
+            </button>
+            <button type="button" class="btn redes facebook">
+                <a href="#">
+                    <span class="fab fa-facebook-f fa-lg blackiconcolor"></span>
+                </a>
+            </button>
+            <button type="button" class="btn redes in">
+                <a href="#">
+                    <span class="fab fa-linkedin-in fa-lg  blackiconcolor"></span>
+                </a>
+            </button>
+            <button type="button" class="btn redes mail">
+                <a href="#"><span class="fas fa-at fa-lg blackiconcolor"></span>
+                </a>
+            </button>
+            <button type="button" class="btn redes whatsapp">
+                <a href="#">
+                    <span class="fab fa-whatsapp fa-lg blackiconcolor"></span>
+                </a>
+            </button>      
+        </footer>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
