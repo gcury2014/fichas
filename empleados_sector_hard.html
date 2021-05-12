@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMPLEADOS SECTOR HARDWARE</title>
+    <meta name="description" content="SIF-D.A.S. Estructura jerarquica del Departamento Hardware">
+    <meta name="keywords" content="RELEVAMIENTOS, EQUIPOS, SERVICIOS, REPARACIONES, SOPORTE, ESTADISTICAS, SIF, DAS">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,300;1,500;1,900&display=swap" rel="stylesheet">   
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    
+    <title>Empleados Dpto Hardware-SIF-D.A.S.</title>    
 </head>
 <body class="fondo_general"> 
   <h1 class="encabezado titulo_pagina">Departamento Hardware - SIF</h1>
@@ -22,7 +23,7 @@
           <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
             <ul class="col-12 navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="principal.html"><img class="logo_ficha" src="./recursos/imagenes/logo_fichas.png" width="100" height= "30" alt="logo"></a>
+                <a class="nav-link" href="principal.html"><img class="logo_ficha" src="./recursos/imagenes/logo_fichas.png" title="Inicio" width="100" height= "30" alt="logo"></a>
               </li> 
               <li class="nav-item mt-2 ml-lg-auto">
                 <a class="nav-link" href="#">Ayuda</a>
@@ -31,7 +32,7 @@
                 <a class="nav-link" href="index.html">Salida</a>
               </li>    
               <li class="nav-item mt-2">
-                <a class="nav-link" href="index.html"><span class="fas fa-sitemap"></span></a>
+                <a class="nav-link" href="sitemap.html"><span class="fas fa-sitemap"></span></a>
             </li>                   
             </ul>
           </div>  
@@ -41,7 +42,7 @@
     <div class="row mt-5">
 <!-------------------TARJETA 1---------------------->
       <div class="col mb-4">
-        <div class="card card_celu card_desk bg-dark">
+        <div class="card card_celu card_desk bg-dark tarjeta">
           <a href="principal.html"><img src="./recursos/imagenes/foto1.jpg" width="200" height="200" class="card-img-top"  alt="imagen"></a> 
           <div class="card-body  bg_gris_claro">                
             <div class="dropdown text-center">
@@ -59,25 +60,25 @@
         </div>
       </div>
 <!-------------------TARJETA 2---------------------->    
-      <div class="col mb-4 ">
-        <div class="card card_celu card_desk">
-          <a href="principal.html"><img src="./recursos/imagenes/foto2.jpg" width="200" height="200" alt="imagen"></a> 
-          <div class="card-body  bg_gris_claro">                
-            <div class="dropdown dropright text-center">
-              <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <p class="font-weight-bold">Ing. Tomas Berrojalviz</p> 
-              </button>              
-              <div class="dropdown-menu bg-info" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#"><strong>Interno: 2002</strong></a>
-                <a class="dropdown-item" href="#"><strong>C.: 15-1234-5678</strong></a>              
-              </div>             
-            </div>            
-          </div>
-        </div>
-      </div>
+<div class="col mb-4">
+  <div class="card card_celu card_desk tarjeta">
+    <a href="principal.html"><img src="./recursos/imagenes/foto2.jpg" width="200" height="200" class="card-img-top" alt="imagen"></a> 
+    <div class="card-body  bg_gris_claro">                
+      <div class="dropdown dropright text-center">
+        <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <p class="font-weight-bold">Ing. Facundo Sabia</p> 
+        </button>              
+        <div class="dropdown-menu bg-info" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#"><strong>Interno: 2003</strong></a>
+          <a class="dropdown-item" href="#"><strong>C.: 15-1234-5678</strong></a>            
+        </div>             
+      </div>            
+    </div>
+  </div>
+</div>
 <!-------------------TARJETA 3---------------------->
       <div class="col mb-4">
-        <div class="card card_celu card_desk">
+        <div class="card card_celu card_desk tarjeta">
           <a href="principal.html"><img src="./recursos/imagenes/foto3.jpg" width="200" height="200" class="card-img-top" alt="imagen"></a> 
           <div class="card-body  bg_gris_claro">                
             <div class="dropdown dropright text-center">
@@ -94,7 +95,7 @@
       </div>
 <!-------------------TARJETA 4---------------------->
       <div class="col mb-4">
-        <div class="card card_celu card_desk">
+        <div class="card card_celu card_desk tarjeta">
           <a href="principal.html"><img src="./recursos/imagenes/foto4.jpg" width="200" height="200" class="card-img-top" alt="imagen"></a> 
           <div class="card-body  bg_gris_claro">                
             <div class="dropdown dropright text-center">
@@ -111,7 +112,7 @@
       </div>  
     </div>  
 <!-------------------------------------------------------->
-    <footer class="btn-group row col-12  mb-2 margen_superior" role="group" aria-label="Basic example">         
+    <footer class="btn-group col-12  mb-2 margen_superior" role="group" aria-label="Basic example">         
       <button type="button" class="btn redes twiter">
           <a href="#">
               <span class="fab fa-twitter fa-lg blackiconcolor"></span>

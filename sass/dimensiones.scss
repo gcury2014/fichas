@@ -1,6 +1,6 @@
 /*************** PANTALLA DESKTOP ************************/
 /*********************************************************/
-@media screen and (min-width: 992px){
+@media screen and (min-width: 950px){
     .grilla_engranaje {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -153,7 +153,7 @@
   }
   
 /*************** PANTALLA CELULARES ************************/
-  @media screen and (max-width: 950px) {
+ @media screen and (max-width: 950px) {
     .grilla_engranaje {
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -240,4 +240,30 @@
     margin-bottom: 170px;
   }
   }
+/*************** MAPA DESK ************************/
+@media screen and (min-width: 1000px){
+  .mapa_celular{
+    display:none;
+  }
+
+}
+/*************** MAPA CELULAR ************************/
+@media screen and (max-width: 1000px){
+  .mapa_desk{
+    display:none;
+  }
+
+  .n1_celular{
+    margin-top: 20px;
+  }
+
+  .n_celular{
+    margin-left:250px;
+  }
+
+  .margen_izquierdo_celular{
+    margin-left: 50px;
+}
+}
+
   /***************************************************************/ 

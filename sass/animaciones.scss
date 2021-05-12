@@ -16,6 +16,13 @@
     }
   }
 
+  @keyframes animacion {
+    from {border: 2px solid rgb(140, 0, 255);}
+    to {border: 10px solid white;}
+    from {background-color: black;}
+    to {background-color:rgb(140, 0, 255);}
+}
+
   /******************* ENGRANAJES*******************/
   div#engranaje_izquierda {
     background-color: #9ea79d;
@@ -60,3 +67,11 @@ div#engranaje_derecho {
   animation-timing-function: linear;
 }
  /************************************************/
+.tarjeta:hover{
+  animation: animacion 3s infinite;
+}
+
+.menu:hover{  
+  margin-top: -10px;
+  transition: margin-top 2s;
+}

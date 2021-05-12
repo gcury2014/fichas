@@ -45,8 +45,7 @@
   color: white; }
 
 .login {
-  margin-top: 0;
-  margin-bottom: 30px; }
+  margin-top: 0; }
 
 .login input {
   display: block;
@@ -81,6 +80,21 @@
   background-color: indigo;
   color: white; }
 
+#registrarse {
+  width: 400px;
+  height: 30px;
+  margin-top: 50px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #af6f10;
+  color: white; }
+
+#registrarse a {
+  color: white;
+  text-decoration: none; }
+
 .img_logo {
   margin-left: auto;
   margin-right: auto;
@@ -107,8 +121,106 @@
   flex-direction: row;
   justify-content: space-around; }
 
+.menu_principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(211, 211, 211, 0.7);
+  max-width: 100%; }
+
+.centrado {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.centrado_n2 {
+  margin-left: 700px; }
+
+.n1 {
+  margin-top: 50px; }
+
+.margen_izquierdo {
+  margin-left: 100px; }
+
+.alto {
+  height: 100px; }
+
+.n2 {
+  margin-left: 45%;
+  margin-top: 70px;
+  margin-right: 100px; }
+
+.n3 {
+  margin-top: 70px; }
+
+.n4 {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  margin-right: 3%; }
+
+.raviol {
+  background-color: #ace7e7;
+  padding: 0;
+  border-radius: 10px;
+  width: 150px;
+  margin-top: 5px; }
+
+.raviol p {
+  font-weight: 600;
+  font-size: 1.3rem;
+  text-align: center;
+  color: black; }
+
+.raviol {
+  box-shadow: 3px 3px grey; }
+
+.raviol a {
+  text-decoration: none; }
+
+.descripcion {
+  color: sienna;
+  background-color: #bac0cf;
+  font-weight: bold;
+  margin: 0;
+  border-radius: 20px;
+  border-color: black; }
+
+.ancho_descripcion {
+  width: 400px; }
+
+.ir {
+  background-color: grey;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 400px;
+  height: 30px;
+  text-align: center; }
+
+.ico {
+  margin-top: 5px; }
+
+.ir a {
+  text-decoration: none;
+  color: white; }
+
+.texto_general {
+  margin-top: 30px;
+  padding: 10px;
+  font-style: italic;
+  text-align: justify;
+  background: #c9c6c5;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 450px;
+  overflow: auto;
+  box-shadow: 5px 5px black;
+  border-top-left-radius: 8px; }
+
 .margen_superior {
-  margin-top: 140px; }
+  margin-top: 160px; }
+
+.margen_superior_pie_ayuda {
+  margin-top: 120px; }
 
 .twiter {
   background-color: #14e4ff; }
@@ -127,7 +239,7 @@
 
 /*************** PANTALLA DESKTOP ************************/
 /*********************************************************/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 950px) {
   .grilla_engranaje {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -315,6 +427,22 @@
   .nivel2 {
     margin-bottom: 170px; } }
 
+/*************** MAPA DESK ************************/
+@media screen and (min-width: 1000px) {
+  .mapa_celular {
+    display: none; } }
+
+/*************** MAPA CELULAR ************************/
+@media screen and (max-width: 1000px) {
+  .mapa_desk {
+    display: none; }
+  .n1_celular {
+    margin-top: 20px; }
+  .n_celular {
+    margin-left: 250px; }
+  .margen_izquierdo_celular {
+    margin-left: 50px; } }
+
 /***************************************************************/
 @keyframes rotar {
   0% {
@@ -327,6 +455,16 @@
     transform: rotate(0deg); }
   100% {
     transform: rotate(-360deg); } }
+
+@keyframes animacion {
+  from {
+    border: 2px solid #8c00ff; }
+  to {
+    border: 10px solid white; }
+  from {
+    background-color: black; }
+  to {
+    background-color: #8c00ff; } }
 
 /******************* ENGRANAJES*******************/
 div#engranaje_izquierda {
@@ -370,12 +508,20 @@ div#engranaje_derecho {
   animation-timing-function: linear; }
 
 /************************************************/
+.tarjeta:hover {
+  animation: animacion 3s infinite; }
+
+.menu:hover {
+  margin-top: -10px;
+  transition: margin-top 2s; }
+
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  width: 100%; }
+  width: 100%;
+  font-family: 'Roboto', sans-serif; }
 
 .division {
   box-shadow: 2px 2px grey;
@@ -386,10 +532,3 @@ body {
 
 .blackiconcolor {
   color: black; }
-
-.menu_principal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: rgba(211, 211, 211, 0.7);
-  max-width: 100%; }

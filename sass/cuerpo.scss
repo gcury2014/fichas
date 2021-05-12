@@ -1,3 +1,5 @@
+@import "variables";
+
 .fondo_logo {
     background-color: midnightblue; }
   
@@ -40,8 +42,7 @@
 
     
 .login {
-    margin-top: 0;
-    margin-bottom: 30px; }
+    margin-top: 0;}
   
 .login input {
     display: block;
@@ -75,7 +76,22 @@
     border-radius: 15px;
     background-color: indigo;
     color: white; }
-      
+
+#registrarse {
+    width: 400px;
+    height: 30px;
+    margin-top: 50px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: rgb(175, 111, 16);
+    color: white; }
+
+#registrarse a{
+    color: white;
+    text-decoration: none;}
+
 .img_logo {
 margin-left: auto;
 margin-right: auto;
@@ -95,9 +111,118 @@ width: 70%; }
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif; }
+    font-family: 'Roboto', sans-serif;}
       
 .cuerpo_principal {
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
+
+.menu_principal{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color:rgba(211, 211, 211, 0.7);
+    max-width: 100%;}
+
+.centrado{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;}
+
+.centrado_n2{
+    margin-left: 700px;  
+}
+
+.n1{
+    margin-top: 50px;
+}
+
+.margen_izquierdo{
+    margin-left: 100px;
+}
+
+.alto{
+    height: 100px;
+}
+
+.n2{
+    margin-left:45%;
+    margin-top: 70px;
+    margin-right: 100px;
+}
+
+.n3{
+    margin-top: 70px;
+}
+
+.n4{
+    margin-top: 60px;
+    margin-bottom: 40px;
+    margin-right: 3%;
+}
+
+.raviol {
+    background-color: rgb(172, 231, 231);
+    padding: 0;
+    border-radius: 10px;
+    width: 150px;
+    margin-top:5px}
+
+.raviol p{font-weight: 600;
+          font-size: 1.3rem;
+          text-align: center;
+          color: black;}
+    
+
+.raviol {
+    box-shadow: 3px 3px grey;
+}
+
+.raviol a{
+    text-decoration: none ;
+}
+
+.descripcion{
+    color: sienna;
+    background-color: $mail;
+    font-weight: bold;
+    margin: 0;
+    border-radius: 20px;
+    border-color: black;}
+
+.ancho_descripcion{
+    width: 400px;
+}
+
+.ir{
+    background-color: grey;
+    border-bottom-right-radius:  20px;
+    border-bottom-left-radius:  20px;
+    width: 400px;
+    height: 30px;
+    text-align: center;
+}
+
+.ico{
+    margin-top:5px;
+}
+
+.ir a{
+    text-decoration: none;
+    color:white;
+}
+
+.texto_general{
+    margin-top: 30px;
+    padding: 10px;
+    font-style: italic;
+    text-align: justify;
+    background: rgb(201, 198, 197);
+    margin-left: 150px;
+    margin-right: 150px;
+    height: 450px;
+    overflow:auto;
+    box-shadow:5px 5px black;
+    border-top-left-radius: 8px;
+}
