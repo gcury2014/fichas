@@ -12,10 +12,6 @@
     height: 100%; 
     margin-left:260px}
 
-    .cuerpo_principal { 
-      margin-top: 400px;
-      margin-bottom: 100px; }
-
     .card_desk{
       width: 200px;
       margin-left: auto;
@@ -150,7 +146,12 @@
     .mostrar_estructura{
       display:none;
   }
+
+  .principal_celular{
+    display:none;
   }
+  }
+  
   
 /*************** PANTALLA CELULARES ************************/
  @media screen and (max-width: 950px) {
@@ -163,9 +164,6 @@
         margin-top: 350px;
         margin-bottom: 50px;
         margin-left: 0;}
-
-    .cuerpo_principal { 
-      margin-bottom: 160px; }
 
     .separacion{
       margin-top:20px;
@@ -238,6 +236,10 @@
 
   .nivel2{
     margin-bottom: 170px;
+  }
+
+  .principal_desk{
+    display:none;
   }
   }
 /*************** MAPA DESK ************************/
