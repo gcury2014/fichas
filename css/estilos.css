@@ -4,10 +4,6 @@
   background-color: cornflowerblue;
   opacity: 0.6; }
 
-.cuerpo_principal {
-  margin-top: 400px;
-  margin-bottom: 100px; }
-
 .fondo_logo {
   background-color: midnightblue; }
 
@@ -244,6 +240,9 @@
 /*************** PANTALLA DESKTOP ************************/
 /*********************************************************/
 @media screen and (min-width: 950px) {
+  .cuerpo_principal_desk {
+    margin-top: 400px;
+    margin-bottom: 100px; }
   .grilla_engranaje {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -368,6 +367,9 @@
 
 /*************** PANTALLA CELULARES ************************/
 @media screen and (max-width: 950px) {
+  .cuerpo_principal_celular {
+    margin-top: 300px;
+    margin-bottom: 100px; }
   .grilla_engranaje {
     display: grid;
     grid-template-columns: 33% 33% 33%;
