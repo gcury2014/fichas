@@ -1,11 +1,16 @@
 /*************** PANTALLA DESKTOP ************************/
 /*********************************************************/
 @media screen and (min-width: 950px){
+  .grilla_engranaje_celular{
+    display:none;}
+
   .cuerpo_principal_desk { 
     margin-top: 400px;
-    margin-bottom: 100px; }
+    margin-bottom: 100px; 
+    margin-left:auto;
+    margin-right:auto; }
 
-    .grilla_engranaje {
+    .grilla_engranaje_desk {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100px;
@@ -159,18 +164,23 @@
   
 /*************** PANTALLA CELULARES ************************/
  @media screen and (max-width: 950px) {
+  .grilla_engranaje_desk{
+    display:none;
+  }
   .cuerpo_principal_celular { 
-    margin-bottom: 100px; }
+    margin-bottom: 100px; 
+    margin-left:auto;
+    margin-right:auto;}
 
-    .grilla_engranaje {
+    .grilla_engranaje_celular {
         display: grid;
         grid-template-columns: 33% 33% 33%;
         max-width: 450px;
         grid-template-rows: 100px;
         grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
-        margin-top: 350px;
         margin-bottom: 50px;
-        margin-left: 0;}
+        margin-left: 0;
+        justify-items: flex-end;}
 
     .separacion{
       margin-top:20px;

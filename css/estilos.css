@@ -209,8 +209,9 @@
   font-style: italic;
   text-align: justify;
   background: #c9c6c5;
-  margin-left: 150px;
-  margin-right: 150px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   height: 450px;
   overflow: auto;
   box-shadow: 5px 5px black;
@@ -240,10 +241,14 @@
 /*************** PANTALLA DESKTOP ************************/
 /*********************************************************/
 @media screen and (min-width: 950px) {
+  .grilla_engranaje_celular {
+    display: none; }
   .cuerpo_principal_desk {
     margin-top: 400px;
-    margin-bottom: 100px; }
-  .grilla_engranaje {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto; }
+  .grilla_engranaje_desk {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100px;
@@ -367,17 +372,21 @@
 
 /*************** PANTALLA CELULARES ************************/
 @media screen and (max-width: 950px) {
+  .grilla_engranaje_desk {
+    display: none; }
   .cuerpo_principal_celular {
-    margin-bottom: 100px; }
-  .grilla_engranaje {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto; }
+  .grilla_engranaje_celular {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     max-width: 450px;
     grid-template-rows: 100px;
     grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
-    margin-top: 350px;
     margin-bottom: 50px;
-    margin-left: 0; }
+    margin-left: 0;
+    justify-items: flex-end; }
   .separacion {
     margin-top: 20px; }
   .sub_titulo {
@@ -536,3 +545,129 @@ body {
 
 .blackiconcolor {
   color: black; }
+
+#grilla_organigrama {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas: "nivel1   nivel1   nivel1   nivel1   nivel1"  "nivel2a  nivel2a  nivel2a  nivel2b  nivel2b" "nivel3a  nivel3b  nivel3c  nivel3d  nivel3e" "nivel4   nivel4   nivel4   nivel4   nivel4";
+  justify-items: center; }
+
+div#nivel1 {
+  grid-area: nivel1;
+  width: 400px;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+div#nivel2a {
+  grid-area: nivel2a;
+  width: 200px;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+div#nivel2b {
+  grid-area: nivel2b;
+  width: 200px;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+div#nivel3a {
+  grid-area: nivel3a;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet;
+  margin-right: 100px; }
+
+div#nivel3b {
+  grid-area: nivel3b;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+div#nivel3c {
+  grid-area: nivel3c;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+div#nivel3d {
+  grid-area: nivel3d;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+div#nivel3e {
+  grid-area: nivel3e;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+div#nivel4 {
+  grid-area: nivel4;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  color: black;
+  text-align: center;
+  background-color: violet; }
+
+#grilla_organigrama p {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.nivel2a1 {
+  margin-left: 65%; }
+
+.nivel2b1 {
+  margin-left: 50px; }
+
+@media screen and (max-width: 950px) {
+  #nivel3a {
+    font-size: 80%; }
+  #nivel3b {
+    font-size: 80%; }
+  #nivel3c {
+    font-size: 80%; }
+  #nivel3d {
+    font-size: 80%; }
+  #nivel3e {
+    font-size: 80%; } }
+
+@media screen and (max-width: 750px) {
+  #nivel3a {
+    font-size: 50%; }
+  #nivel3b {
+    font-size: 50%; }
+  #nivel3c {
+    font-size: 50%; }
+  #nivel3d {
+    font-size: 50%; }
+  #nivel3e {
+    font-size: 50%; } }
