@@ -4,6 +4,34 @@
   background-color: cornflowerblue;
   opacity: 0.6; }
 
+.wrapper {
+  background: #262626;
+  height: 650px; }
+
+.coming {
+  text-align: center;
+  padding-top: 120px; }
+
+.coming h2 {
+  color: #f15c58;
+  font-size: 55px;
+  font-weight: bolder;
+  font-family: "Raleway", sans-serif; }
+
+.coming p {
+  color: #8f8686;
+  font-size: 27px;
+  padding-top: 120px;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif; }
+
+.countdown .back-text h4 {
+  color: red;
+  background: red; }
+
+.fondo {
+  background-color: black; }
+
 .fondo_logo {
   background-color: midnightblue; }
 
@@ -14,7 +42,8 @@
   margin-right: auto;
   background-color: #0048cd;
   border-radius: 15px;
-  width: 400px; }
+  width: 400px;
+  padding-right: 0; }
 
 .centrado_login {
   max-width: 50%; }
@@ -28,7 +57,6 @@
   color: white; }
 
 .titulo_pagina {
-  font-weight: bold;
   font-size: 50px;
   color: black;
   margin-bottom: 0; }
@@ -88,12 +116,10 @@
   border-top-left-radius: 0;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-color: #af6f10;
-  color: white; }
-
-#registrarse a {
-  color: white;
-  text-decoration: none; }
+  background-color: #0894be;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px; }
 
 .img_logo {
   margin-left: auto;
@@ -114,7 +140,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .cuerpo_principal {
   display: flex;
@@ -158,36 +184,6 @@
   margin-bottom: 40px;
   margin-right: 3%; }
 
-.raviol {
-  background-color: #ace7e7;
-  padding: 0;
-  border-radius: 10px;
-  width: 150px;
-  margin-top: 5px; }
-
-.raviol p {
-  font-weight: 600;
-  font-size: 1.3rem;
-  text-align: center;
-  color: black; }
-
-.raviol {
-  box-shadow: 3px 3px grey; }
-
-.raviol a {
-  text-decoration: none; }
-
-.descripcion {
-  color: sienna;
-  background-color: #bac0cf;
-  font-weight: bold;
-  margin: 0;
-  border-radius: 20px;
-  border-color: black; }
-
-.ancho_descripcion {
-  width: 400px; }
-
 .ir {
   background-color: grey;
   border-bottom-right-radius: 20px;
@@ -208,20 +204,40 @@
   padding: 10px;
   font-style: italic;
   text-align: justify;
-  background: #c9c6c5;
+  background: #c9c5df;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height: 450px;
+  height: 470px;
   overflow: auto;
   box-shadow: 5px 5px black;
   border-top-left-radius: 8px; }
 
+.cuerpo_registro {
+  margin-top: 20px;
+  padding-bottom: 10px;
+  background-color: rgba(128, 50, 50, 0.5); }
+
+.cuerpo_registro input {
+  font-style: italic; }
+
+.negrita {
+  font-weight: bold; }
+
+.enlace_mapa a:hover {
+  background-color: #8f8686; }
+
 .margen_superior {
   margin-top: 160px; }
 
-.margen_superior_pie_ayuda {
-  margin-top: 120px; }
+.margen_superior_ayuda {
+  margin-top: 160px; }
+
+.margen_superior_ayuda {
+  margin-top: 160px; }
+
+.margen_superior_construccion {
+  margin-top: 60px; }
 
 .twiter {
   background-color: #14e4ff; }
@@ -238,9 +254,16 @@
 .whatsapp {
   background-color: #21f579; }
 
-/*************** PANTALLA DESKTOP ************************/
+.logo_pie {
+  display: inline-block; }
+
+/*************** PANTALLA GENERAL DESKTOP ************************/
 /*********************************************************/
 @media screen and (min-width: 950px) {
+  .margen_superior_pie_mapa {
+    margin-top: 180px !important; }
+  .mapa_celular {
+    display: none; }
   .grilla_engranaje_celular {
     display: none; }
   .cuerpo_principal_desk {
@@ -314,28 +337,25 @@
     font-size: 30px;
     border: 1px solid white;
     padding-top: 30px; }
+  section#subdireccion:hover {
+    background-color: #778376; }
   section#sop_ext {
     background-color: #8da08b;
     grid-area: sop_ext;
     border: 1px solid white; }
-  section#depto_hard {
+  .departamento {
     background-color: #a8b3a7;
-    grid-area: depto_hard;
     text-align: center;
     padding-top: 20px;
     border: 1px solid white; }
+  .departamento:hover {
+    background-color: #778376; }
+  section#hard {
+    grid-area: depto_soft; }
   section#depto_soft {
-    background-color: #a8b3a7;
-    grid-area: depto_soft;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
+    grid-area: depto_soft; }
   section#depto_adm {
-    background-color: #a8b3a7;
-    grid-area: depto_adm;
-    text-align: center;
-    padding-top: 20px;
-    border: 1px solid white; }
+    grid-area: depto_adm; }
   article#emp_hard {
     background-color: #a8b3a7;
     grid-area: emp_hard;
@@ -370,8 +390,42 @@
   .principal_celular {
     display: none; } }
 
-/*************** PANTALLA CELULARES ************************/
+/*************** PANTALLA GENERAL CELULARES ************************/
 @media screen and (max-width: 950px) {
+  .margen_superior_pie_mapa {
+    margin-top: 100px !important; }
+  #nivel1 {
+    width: 40% !important; }
+  #nivel2a {
+    width: 50% !important; }
+  #nivel2b {
+    width: 50% !important; }
+  #nivel3a {
+    font-size: 80%; }
+  #nivel3b {
+    font-size: 80%; }
+  #nivel3c {
+    font-size: 80%; }
+  #nivel3d {
+    font-size: 80%; }
+  #nivel3e {
+    font-size: 80%; }
+  .niv4a1 {
+    font-size: 80%;
+    width: 100px !important;
+    height: 80px !important; }
+  .niv4b1 {
+    font-size: 80%;
+    width: 100px !important;
+    height: 150px !important; }
+  .niv4c1 {
+    font-size: 80%;
+    width: 100px !important;
+    height: 150px !important; }
+  .niv4d1 {
+    font-size: 80%;
+    height: 180px !important;
+    margin-left: 180px !important; }
   .grilla_engranaje_desk {
     display: none; }
   .cuerpo_principal_celular {
@@ -408,7 +462,6 @@
     margin-right: auto; }
   .mostrar_estructura h2 {
     font-size: 2em;
-    font-weight: bold;
     text-align: center; }
   .mostrar_estructura a {
     text-decoration: none;
@@ -417,7 +470,6 @@
     color: black; }
   .boton_subdireccion {
     background-color: #99b5e9;
-    font-weight: bold;
     font-size: 1em;
     border: 1px solid black;
     box-shadow: 2px 2px grey;
@@ -426,7 +478,6 @@
     width: 200px;
     height: 70px;
     background-color: #61c3ca;
-    font-weight: bold;
     font-size: 1em;
     border: 1px solid black;
     box-shadow: 2px 2px grey;
@@ -440,17 +491,51 @@
   .principal_desk {
     display: none; } }
 
-/*************** MAPA DESK ************************/
-@media screen and (min-width: 1000px) {
-  .mapa_celular {
-    display: none; } }
+/*************** MAPA CELULAR 1 ************************/
+@media screen and (max-width: 750px) {
+  .margen_superior_pie_mapa {
+    margin-top: 40px !important; }
+  .grilla_organigrama_celular1 {
+    grid-template-rows: 60px 60px 60px 100px !important; }
+  #nivel3a {
+    font-size: 50%;
+    margin-left: 100px; }
+  #nivel3b {
+    font-size: 50%; }
+  #nivel3c {
+    font-size: 40%; }
+  #nivel3d {
+    font-size: 50%; }
+  #nivel3e {
+    font-size: 50%; }
+  .niv4a1 {
+    font-size: 50%;
+    width: 80px !important;
+    height: 60px !important;
+    margin-left: 100px !important; }
+  .niv4b1 {
+    font-size: 50%;
+    width: 100px !important;
+    height: 80px !important; }
+  .niv4c1 {
+    font-size: 50%;
+    width: 100px !important;
+    height: 90px !important; }
+  .niv4d1 {
+    font-size: 50%;
+    width: 80px !important;
+    height: 130px !important;
+    margin-right: 60px !important; } }
 
-/*************** MAPA CELULAR ************************/
+/*************** MAPA CELULAR 2 ************************/
 @media screen and (max-width: 1000px) {
   .mapa_desk {
     display: none; }
+  .grilla_organigrama_celular2 {
+    grid-template-rows: 60px 60px 60px 100px !important; }
   .n1_celular {
-    margin-top: 20px; }
+    margin-top: 20px;
+    margin-bottom: 10px !important; }
   .n_celular {
     margin-left: 250px; }
   .margen_izquierdo_celular {
@@ -478,6 +563,12 @@
     background-color: black; }
   to {
     background-color: #8c00ff; } }
+
+@keyframes girar_titulo {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg); } }
 
 /******************* ENGRANAJES*******************/
 div#engranaje_izquierda {
@@ -526,7 +617,7 @@ div#engranaje_derecho {
 
 .menu:hover {
   margin-top: -10px;
-  transition: margin-top 2s; }
+  transition: margin-top 0.1s; }
 
 * {
   margin: 0;
@@ -534,7 +625,7 @@ div#engranaje_derecho {
 
 body {
   width: 100%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 .division {
   box-shadow: 2px 2px grey;
@@ -550,90 +641,121 @@ body {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 100px 100px 100px 100px;
-  grid-template-areas: "nivel1   nivel1   nivel1   nivel1   nivel1"  "nivel2a  nivel2a  nivel2a  nivel2b  nivel2b" "nivel3a  nivel3b  nivel3c  nivel3d  nivel3e" "nivel4   nivel4   nivel4   nivel4   nivel4";
-  justify-items: center; }
+  grid-template-areas: "nivel1   nivel1   nivel1   nivel1   nivel1" "nivel2a  nivel2a  nivel2a  nivel2b  nivel2b" "nivel3a  nivel3b  nivel3c  nivel3d  nivel3e" "nivel4a1 nivel4b1 nivel4c1 nivel4d1 nivel4d1";
+  justify-items: center;
+  font-weight: bold; }
 
 div#nivel1 {
   grid-area: nivel1;
   width: 400px;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #b47fb4;
+  border-radius: 10px;
+  margin-top: 10px; }
 
 div#nivel2a {
   grid-area: nivel2a;
   width: 200px;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #a04fa0;
+  border-radius: 10px; }
 
 div#nivel2b {
   grid-area: nivel2b;
   width: 200px;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #a04fa0;
+  border-radius: 10px; }
 
 div#nivel3a {
   grid-area: nivel3a;
   width: 50%;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet;
-  margin-right: 100px; }
+  background-color: #a04fa0;
+  margin-right: 100px;
+  border-radius: 10px; }
 
 div#nivel3b {
   grid-area: nivel3b;
   width: 50%;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #a04fa0;
+  border-radius: 10px; }
 
 div#nivel3c {
   grid-area: nivel3c;
   width: 50%;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #a04fa0;
+  border-radius: 10px; }
 
 div#nivel3d {
   grid-area: nivel3d;
   width: 50%;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #a04fa0;
+  border-radius: 10px; }
 
 div#nivel3e {
   grid-area: nivel3e;
   width: 50%;
   height: 40px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #a04fa0;
+  border-radius: 10px; }
 
-div#nivel4 {
-  grid-area: nivel4;
-  width: 50%;
-  height: 40px;
+div#nivel4a1 {
+  grid-area: nivel4a1;
+  width: 130px;
+  height: 90px;
   border: 1px solid yellow;
-  color: black;
   text-align: center;
-  background-color: violet; }
+  background-color: #b47fb4;
+  border-radius: 10px;
+  margin-right: 100px; }
+
+div#nivel4b1 {
+  grid-area: nivel4b1;
+  width: 160px;
+  height: 130px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: #b47fb4;
+  border-radius: 10px; }
+
+div#nivel4c1 {
+  grid-area: nivel4c1;
+  width: 200px;
+  height: 130px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: #b47fb4;
+  border-radius: 10px; }
+
+div#nivel4d1 {
+  grid-area: nivel4d1;
+  width: 180px;
+  height: 220px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: #b47fb4;
+  border-radius: 10px;
+  margin-left: 260px; }
 
 #grilla_organigrama p {
   width: 70%;
@@ -648,26 +770,16 @@ div#nivel4 {
 .nivel2b1 {
   margin-left: 50px; }
 
-@media screen and (max-width: 950px) {
-  #nivel3a {
-    font-size: 80%; }
-  #nivel3b {
-    font-size: 80%; }
-  #nivel3c {
-    font-size: 80%; }
-  #nivel3d {
-    font-size: 80%; }
-  #nivel3e {
-    font-size: 80%; } }
+#grilla_organigrama p {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto; }
 
-@media screen and (max-width: 750px) {
-  #nivel3a {
-    font-size: 50%; }
-  #nivel3b {
-    font-size: 50%; }
-  #nivel3c {
-    font-size: 50%; }
-  #nivel3d {
-    font-size: 50%; }
-  #nivel3e {
-    font-size: 50%; } }
+#grilla_organigrama a {
+  text-decoration: none;
+  color: white; }
+
+#grilla_organigrama a:hover {
+  color: black; }

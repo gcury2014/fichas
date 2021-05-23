@@ -1,35 +1,53 @@
 @keyframes rotar {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
   }
-  
-  @keyframes rotar1 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-360deg);
-    }
+  100% {
+    transform: rotate(360deg);
   }
-
-  @keyframes animacion {
-    from {border: 2px solid rgb(140, 0, 255);}
-    to {border: 10px solid white;}
-    from {background-color: black;}
-    to {background-color:rgb(140, 0, 255);}
 }
 
-  /******************* ENGRANAJES*******************/
-  div#engranaje_izquierda {
-    background-color: #9ea79d;
-    grid-area: engranaje_izquierda;
-    text-align: center;
-    font-size: 30px;  
-    padding-top:30px;}
+@keyframes rotar1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes animacion {
+  from {
+    border: 2px solid rgb(140, 0, 255);
+  }
+  to {
+    border: 10px solid white;
+  }
+  from {
+    background-color: black;
+  }
+  to {
+    background-color: rgb(140, 0, 255);
+  }
+}
+
+@keyframes girar_titulo {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+/******************* ENGRANAJES*******************/
+div#engranaje_izquierda {
+  background-color: #9ea79d;
+  grid-area: engranaje_izquierda;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 30px;
+}
 
 div#engranaje_centro {
   background-color: #9ea79d;
@@ -37,7 +55,8 @@ div#engranaje_centro {
   padding: 3%;
   text-align: center;
   font-size: 30px;
-  padding-top:30px;}
+  padding-top: 30px;
+}
 
 div#engranaje_derecho {
   background-color: #9ea79d;
@@ -45,9 +64,10 @@ div#engranaje_derecho {
   padding: 3%;
   text-align: center;
   font-size: 30px;
-  padding-top:30px;}  
+  padding-top: 30px;
+}
 
-.engranaje2{
+.engranaje2 {
   animation-name: rotar;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -55,23 +75,23 @@ div#engranaje_derecho {
   animation-timing-function: linear;
 }
 
-.engranaje3{
+.engranaje3 {
   margin-left: -10px;
 }
 
-.engranaje1{
+.engranaje1 {
   animation-name: rotar1;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
   animation-timing-function: linear;
 }
- /************************************************/
-.tarjeta:hover{
+/************************************************/
+.tarjeta:hover {
   animation: animacion 3s infinite;
 }
 
-.menu:hover{  
+.menu:hover {
   margin-top: -10px;
-  transition: margin-top 2s;
+  transition: margin-top 0.1s;
 }

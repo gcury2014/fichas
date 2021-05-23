@@ -1,0 +1,169 @@
+#grilla_organigrama {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-areas:
+    "nivel1   nivel1   nivel1   nivel1   nivel1"
+    "nivel2a  nivel2a  nivel2a  nivel2b  nivel2b"
+    "nivel3a  nivel3b  nivel3c  nivel3d  nivel3e"
+    "nivel4a1 nivel4b1 nivel4c1 nivel4d1 nivel4d1";
+  justify-items: center;
+  font-weight: bold;
+}
+
+div#nivel1 {
+  grid-area: nivel1;
+  width: 400px;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+div#nivel2a {
+  grid-area: nivel2a;
+  width: 200px;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa_enlace;
+  border-radius: 10px;
+}
+
+div#nivel2b {
+  grid-area: nivel2b;
+  width: 200px;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa_enlace;
+  border-radius: 10px;
+}
+
+div#nivel3a {
+  grid-area: nivel3a;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa_enlace;
+  margin-right: 100px;
+  border-radius: 10px;
+}
+
+div#nivel3b {
+  grid-area: nivel3b;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa_enlace;
+  border-radius: 10px;
+}
+
+div#nivel3c {
+  grid-area: nivel3c;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa_enlace;
+  border-radius: 10px;
+}
+
+div#nivel3d {
+  grid-area: nivel3d;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa_enlace;
+  border-radius: 10px;
+}
+
+div#nivel3e {
+  grid-area: nivel3e;
+  width: 50%;
+  height: 40px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa_enlace;
+  border-radius: 10px;
+}
+
+div#nivel4a1 {
+  grid-area: nivel4a1;
+  width: 130px;
+  height: 90px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa;
+  border-radius: 10px;
+  margin-right: 100px;
+}
+
+div#nivel4b1 {
+  grid-area: nivel4b1;
+  width: 160px;
+  height: 130px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa;
+  border-radius: 10px;
+}
+
+div#nivel4c1 {
+  grid-area: nivel4c1;
+  width: 200px;
+  height: 130px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa;
+  border-radius: 10px;
+}
+
+div#nivel4d1 {
+  grid-area: nivel4d1;
+  width: 180px;
+  height: 220px;
+  border: 1px solid yellow;
+  text-align: center;
+  background-color: $mapa;
+  border-radius: 10px;
+  margin-left: 260px;
+}
+
+#grilla_organigrama p {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nivel2a1 {
+  margin-left: 65%;
+}
+
+.nivel2b1 {
+  margin-left: 50px;
+}
+
+#grilla_organigrama p {
+  width: 70%;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#grilla_organigrama a {
+  text-decoration: none;
+  color: white;
+}
+
+#grilla_organigrama a:hover {
+  color: black;
+}

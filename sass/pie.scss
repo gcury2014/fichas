@@ -1,26 +1,39 @@
-.margen_superior{
-    margin-top:160px;
+.margen_superior {
+  margin-top: 160px;
 }
 
-.margen_superior_pie_ayuda{
-    margin-top:120px;
-}
-.twiter{
-    background-color: $twitter;
+.margen_superior_ayuda {
+  margin-top: 160px;
 }
 
-.facebook{
-    background-color: $face;
+.margen_superior_ayuda {
+  margin-top: 160px;
 }
 
-.in{
-    background-color: $in;
+.margen_superior_construccion {
+  margin-top: 60px;
 }
 
-.mail{
-    background-color: $mail;
+.twiter {
+  background-color: $twitter;
 }
 
-.whatsapp{
-    background-color: $what;
+.facebook {
+  background-color: $face;
+}
+
+.in {
+  background-color: $in;
+}
+
+.mail {
+  background-color: $mail;
+}
+
+.whatsapp {
+  background-color: $what;
+}
+
+.logo_pie {
+  display: inline-block;
 }

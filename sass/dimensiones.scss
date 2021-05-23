@@ -1,16 +1,26 @@
-/*************** PANTALLA DESKTOP ************************/
+/*************** PANTALLA GENERAL DESKTOP ************************/
 /*********************************************************/
-@media screen and (min-width: 950px){
-  .grilla_engranaje_celular{
-    display:none;}
+@media screen and (min-width: 950px) {
+  .margen_superior_pie_mapa {
+    margin-top: 180px !important;
+  }
 
-  .cuerpo_principal_desk { 
+  .mapa_celular {
+    display: none;
+  }
+
+  .grilla_engranaje_celular {
+    display: none;
+  }
+
+  .cuerpo_principal_desk {
     margin-top: 400px;
-    margin-bottom: 100px; 
-    margin-left:auto;
-    margin-right:auto; }
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .grilla_engranaje_desk {
+  .grilla_engranaje_desk {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 100px;
@@ -18,271 +28,403 @@
     margin-top: 450px;
     margin-bottom: 30px;
     margin-left: 50px;
-    height: 100%; 
-    margin-left:260px}
+    height: 100%;
+    margin-left: 260px;
+  }
 
-    .card_desk{
-      width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top:50px}
-/***************GRILLA ESTRUCTURA DESKTOP************************/
-    #grid { 
-      display: grid;
-      grid-template-columns: 25% 25% 25% 25%;
-      grid-template-rows: 100px 150px 100px 100px 80px;
-      grid-template-areas: "titulo_grilla       titulo_grilla       titulo_grilla       titulo_grilla"
-                           "subdireccion        subdireccion        subdireccion        subdireccion"
-                           "depto_hard          depto_soft          depto_adm           sop_ext"
-                           "emp_hard            emp_soft            emp_adm             sop_ext"
-                           "pie_grilla          pie_grilla          pie_grilla          pie_grilla";
-      margin-top: 30px;
-      margin-bottom: 40px;
-      margin-left: auto;
-      margin-right: auto;
-      border: 1px solid black;
-      box-shadow: 2px 2px grey;
-      border-radius: 3px;
-      width: 1200px;
-      height: 100%; }
-  
-    .grilla { 
-      font-style: italic; }
-  
-    .grilla a{  
-      text-decoration: none;
-      color: rgb(75, 72, 72);}
-  
-    .grilla a:hover{  
-      color: rgb(0, 0, 0);
-    }
+  .card_desk {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  /***************GRILLA ESTRUCTURA DESKTOP************************/
+  #grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 150px 100px 100px 80px;
+    grid-template-areas:
+      "titulo_grilla       titulo_grilla       titulo_grilla       titulo_grilla"
+      "subdireccion        subdireccion        subdireccion        subdireccion"
+      "depto_hard          depto_soft          depto_adm           sop_ext"
+      "emp_hard            emp_soft            emp_adm             sop_ext"
+      "pie_grilla          pie_grilla          pie_grilla          pie_grilla";
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    border-radius: 3px;
+    width: 1200px;
+    height: 100%;
+  }
 
-    .tit_sop_ext {  
-      margin-top: 60px;
-      text-align: center; }
-  
-    .fuentes_areas p {  
-      margin-left: 90px;
-      margin-right: 90px;
-      font-size: 20px; }
-  
-    .tit_subdireccion p { 
-      margin-left: 250px;
-      margin-right: 250px; }
-  
-    section#titulo_grilla { 
-      background-color: #494c55;
-      grid-area: titulo_grilla;
-      text-align: center;
-      padding: 15px;
-      color: white;
-      font-size: 50px;
-      font-style: italic;
-      border: 1px solid white;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px;}
-  
-    section#subdireccion {  
-      background-color: #9ea79d;
-      grid-area: subdireccion;
-      padding: 3%;
-      text-align: center;
+  .grilla {
+    font-style: italic;
+  }
+
+  .grilla a {
+    text-decoration: none;
+    color: rgb(75, 72, 72);
+  }
+
+  .grilla a:hover {
+    color: rgb(0, 0, 0);
+  }
+
+  .tit_sop_ext {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .fuentes_areas p {
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 20px;
+  }
+
+  .tit_subdireccion p {
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+
+  section#titulo_grilla {
+    background-color: #494c55;
+    grid-area: titulo_grilla;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    border: 1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  section#subdireccion {
+    background-color: #9ea79d;
+    grid-area: subdireccion;
+    padding: 3%;
+    text-align: center;
     font-size: 30px;
-      border: 1px solid white; 
-      padding-top:30px;}
-  
-    section#sop_ext { 
-      background-color: #8da08b;
-      grid-area: sop_ext;
-      border: 1px solid white; }
-  
-    section#depto_hard {  
-      background-color: #a8b3a7;
-      grid-area: depto_hard;
-      text-align: center;
-      padding-top: 20px;
-      border: 1px solid white; }
-  
-    section#depto_soft {  
-      background-color: #a8b3a7;
-      grid-area: depto_soft;
-      text-align: center;
-      padding-top: 20px;
-      border: 1px solid white; }
-  
-    section#depto_adm { 
-      background-color: #a8b3a7;
-      grid-area: depto_adm;
-      text-align: center;
-      padding-top: 20px;
-      border: 1px solid white; }
-  
-    article#emp_hard {  
-      background-color: #a8b3a7;
-      grid-area: emp_hard;
-      text-align: center;
-      padding-top: 20px;
-      border: 1px solid white; }
-  
-    article#emp_soft {  
-      background-color: #a8b3a7;
-      grid-area: emp_soft;
-      text-align: center;
-      padding-top: 20px;
-      border: 1px solid white; }
-  
-    article#emp_adm { 
-      background-color: #a8b3a7;
-      grid-area: emp_adm;
-      text-align: center;
-      padding-top: 20px;
-      border: 1px solid white; }
-  
-    section#pie_grilla {  
-      padding-top: 20px;
-      background-color: grey;
-      grid-area: pie_grilla;
-      border: 1px solid white;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
-  
-    .logo_derecha { 
-      margin-left: 1000px; }
-  
-    .logo_izquierda {
-      margin-left: 30px; }
-  
-    .mostrar_estructura{
-      display:none;
+    border: 1px solid white;
+    padding-top: 30px;
   }
 
-  .principal_celular{
-    display:none;
+  section#subdireccion:hover {
+    background-color: #778376;
   }
+
+  section#sop_ext {
+    background-color: #8da08b;
+    grid-area: sop_ext;
+    border: 1px solid white;
   }
-  
-  
-/*************** PANTALLA CELULARES ************************/
- @media screen and (max-width: 950px) {
-  .grilla_engranaje_desk{
-    display:none;
+
+  .departamento {
+    background-color: #a8b3a7;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white;
   }
-  .cuerpo_principal_celular { 
-    margin-bottom: 100px; 
-    margin-left:auto;
-    margin-right:auto;}
 
-    .grilla_engranaje_celular {
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        max-width: 450px;
-        grid-template-rows: 100px;
-        grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
-        margin-bottom: 50px;
-        margin-left: 0;
-        justify-items: flex-end;}
+  .departamento:hover {
+    background-color: #778376;
+  }
 
-    .separacion{
-      margin-top:20px;
-    }
+  section#hard {
+    grid-area: depto_soft;
+  }
 
-    .sub_titulo {
-      text-align: center;
-      font-size: 20px;
-      margin-top: 30px;}
-      
-    .titulo {
-      text-align: center;
-      font-size: 20px;
-      margin-top: 10px; } 
-    
-    .ocultar_grilla{
-      display: none;
-    }
-  
-    .ocultar_estructura{
-      display: none;
-    }
+  section#depto_soft {
+    grid-area: depto_soft;
+  }
+
+  section#depto_adm {
+    grid-area: depto_adm;
+  }
+
+  article#emp_hard {
+    background-color: #a8b3a7;
+    grid-area: emp_hard;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white;
+  }
+
+  article#emp_soft {
+    background-color: #a8b3a7;
+    grid-area: emp_soft;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white;
+  }
+
+  article#emp_adm {
+    background-color: #a8b3a7;
+    grid-area: emp_adm;
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid white;
+  }
+
+  section#pie_grilla {
+    padding-top: 20px;
+    background-color: grey;
+    grid-area: pie_grilla;
+    border: 1px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .logo_derecha {
+    margin-left: 1000px;
+  }
+
+  .logo_izquierda {
+    margin-left: 30px;
+  }
+
+  .mostrar_estructura {
+    display: none;
+  }
+
+  .principal_celular {
+    display: none;
+  }
+}
+
+/*************** PANTALLA GENERAL CELULARES ************************/
+@media screen and (max-width: 950px) {
+  .margen_superior_pie_mapa {
+    margin-top: 100px !important;
+  }
+
+  #nivel1 {
+    width: 40% !important;
+  }
+
+  #nivel2a {
+    width: 50% !important;
+  }
+
+  #nivel2b {
+    width: 50% !important;
+  }
+
+  #nivel3a {
+    font-size: 80%;
+  }
+  #nivel3b {
+    font-size: 80%;
+  }
+  #nivel3c {
+    font-size: 80%;
+  }
+  #nivel3d {
+    font-size: 80%;
+  }
+  #nivel3e {
+    font-size: 80%;
+  }
+
+  .niv4a1 {
+    font-size: 80%;
+    width: 100px !important;
+    height: 80px !important;
+  }
+
+  .niv4b1 {
+    font-size: 80%;
+    width: 100px !important;
+    height: 150px !important;
+  }
+
+  .niv4c1 {
+    font-size: 80%;
+    width: 100px !important;
+    height: 150px !important;
+  }
+
+  .niv4d1 {
+    font-size: 80%;
+    height: 180px !important;
+    margin-left: 180px !important;
+  }
+
+  .grilla_engranaje_desk {
+    display: none;
+  }
+
+  .cuerpo_principal_celular {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grilla_engranaje_celular {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    max-width: 450px;
+    grid-template-rows: 100px;
+    grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
+    margin-bottom: 50px;
+    margin-left: 0;
+    justify-items: flex-end;
+  }
+
+  .separacion {
+    margin-top: 20px;
+  }
+
+  .sub_titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .titulo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .ocultar_grilla {
+    display: none;
+  }
+
+  .ocultar_estructura {
+    display: none;
+  }
   /***********ESTRUCTURA JERARQUICA  PARA CELULARES *************/
-  .card_celu{
+  .card_celu {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .mostrar_estructura h2{
+  .mostrar_estructura h2 {
     font-size: 2em;
-    font-weight: bold;
     text-align: center;
   }
-  
-  .mostrar_estructura a{
+
+  .mostrar_estructura a {
     text-decoration: none;
     color: grey;
   }
-  
-  .mostrar_estructura a:hover{
+
+  .mostrar_estructura a:hover {
     color: black;
   }
-  
-  .boton_subdireccion{
+
+  .boton_subdireccion {
     background-color: rgb(153, 181, 233);
-    font-weight: bold;
     font-size: 1em;
     border: 1px solid black;
     box-shadow: 2px 2px grey;
     border-radius: 5px;
   }
-  
-  .boton_departamento{
+
+  .boton_departamento {
     width: 200px;
     height: 70px;
     background-color: rgb(97, 195, 202);
-    font-weight: bold;
     font-size: 1em;
     border: 1px solid black;
     box-shadow: 2px 2px grey;
     border-radius: 5px;
   }
-  
-  .nivel1{
-    display:flex;
-    flex-direction: row;
-    justify-content:space-around;
-  } 
 
-  .nivel2{
+  .nivel1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nivel2 {
     margin-bottom: 170px;
   }
 
-  .principal_desk{
-    display:none;
+  .principal_desk {
+    display: none;
   }
-  }
-/*************** MAPA DESK ************************/
-@media screen and (min-width: 1000px){
-  .mapa_celular{
-    display:none;
-  }
-
 }
-/*************** MAPA CELULAR ************************/
-@media screen and (max-width: 1000px){
-  .mapa_desk{
-    display:none;
+/*************** MAPA CELULAR 1 ************************/
+@media screen and (max-width: 750px) {
+  .margen_superior_pie_mapa {
+    margin-top: 40px !important;
   }
 
-  .n1_celular{
+  .grilla_organigrama_celular1 {
+    grid-template-rows: 60px 60px 60px 100px !important;
+  }
+
+  #nivel3a {
+    font-size: 50%;
+    margin-left: 100px;
+  }
+  #nivel3b {
+    font-size: 50%;
+  }
+  #nivel3c {
+    font-size: 40%;
+  }
+  #nivel3d {
+    font-size: 50%;
+  }
+  #nivel3e {
+    font-size: 50%;
+  }
+
+  .niv4a1 {
+    font-size: 50%;
+    width: 80px !important;
+    height: 60px !important;
+    margin-left: 100px !important;
+  }
+
+  .niv4b1 {
+    font-size: 50%;
+    width: 100px !important;
+    height: 80px !important;
+  }
+
+  .niv4c1 {
+    font-size: 50%;
+    width: 100px !important;
+    height: 90px !important;
+  }
+
+  .niv4d1 {
+    font-size: 50%;
+    width: 80px !important;
+    height: 130px !important;
+    margin-right: 60px !important;
+  }
+}
+/*************** MAPA CELULAR 2 ************************/
+@media screen and (max-width: 1000px) {
+  .mapa_desk {
+    display: none;
+  }
+
+  .grilla_organigrama_celular2 {
+    grid-template-rows: 60px 60px 60px 100px !important;
+  }
+
+  .n1_celular {
     margin-top: 20px;
+    margin-bottom: 10px !important;
   }
 
-  .n_celular{
-    margin-left:250px;
+  .n_celular {
+    margin-left: 250px;
   }
 
-  .margen_izquierdo_celular{
+  .margen_izquierdo_celular {
     margin-left: 50px;
-}
+  }
 }
 
-  /***************************************************************/ 
+/***************************************************************/

@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SIF-D.A.S. Mapa del Sitio">
+    <meta name="description"
+        content="Implementación para el relevamiento y mantenimiento del parque informático de la institución asistencial D.A.S.-Dirección de Ayuda Social para el Personal del Congreso de la Nación">
     <meta name="keywords" content="RELEVAMIENTOS, EQUIPOS, SERVICIOS, REPARACIONES, SOPORTE, ESTADISTICAS, SIF, DAS">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/estilos.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/fontawesome/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,300;1,500;1,900&display=swap" rel="stylesheet">   
-    <title>Mapa del Sitio-SIF-D.A.S.</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,900;1,100;1,300;1,500;1,900&display=swap"
+        rel="stylesheet">
+    <title>Principal-SIF-D.A.S.</title>
 </head>
-<body class="fondo_general"> 
-    <div class="container-fluid">      
-        <header class="row encabezado">            
-            <h1 class="col-12 m-0 titulo_pagina">Mapa del Sitio - SIF - D.A.S.</h1>
-        </header> 
-<!-------------------MENU DESPLEGABLE----------------------->
+
+<body class="fondo_general">
+    <div class="container-fluid">
+        <header class="row encabezado">
+            <h1 class="col-12 titulo_pagina negrita">Sistema Integral Fichas</h1>
+        </header>
+        <!-------------------MENU DESPLEGABLE----------------------->
         <div class="row">
             <nav class="col-12 navbar bg-dark navbar-expand-md navbar-dark p-0">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -27,281 +33,125 @@
                 <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
                     <ul class="col-12 navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="principal.html"><img class="logo_ficha" src="./recursos/imagenes/logo_fichas.png" title="Inicio" width="100" height= "30" alt="logo"></a>
-                        </li> 
+                            <a class="nav-link" href="principal.html"><img class="logo_ficha"
+                                    src="./recursos/imagenes/logo_fichas.png" title="Inicio" width="100" height="30"
+                                    alt="logo"></a>
+                        </li>
                         <li class="nav-item mt-2 ml-lg-auto">
-                            <a class="nav-link" href="#">Ayuda</a>
+                            <a class="nav-link" href="ayuda.html">Ayuda</a>
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link" href="index.html">Salida</a>
                         </li>
                         <li class="nav-item mt-2">
                             <a class="nav-link" href="sitemap.html"><span class="fas fa-sitemap"></span></a>
-                        </li>                                          
+                        </li>
                     </ul>
-                </div>  
+                </div>
             </nav>
         </div>
-<!-------------------------------------------------------->
-        <main>
-<!-------------------------MAPA DESK-------------------------------->
-            <div class="mapa_desk">
-                <div class="row">
-<!-------------------------REGISTRO-------------------------------->
-                    <div class="col-1 centrado n1 raviol mt-5">
-                        <p>Registro</p>
-                    </div>
-                </div>
-<!-------------------------INICIO  AYUDA-------------------------------->
-                <div class="row n2">
-                    <a href="principal.html">
-                        <button type="button" class="raviol btn btn-sm btn-secondary" aria-haspopup="true" aria-expanded="false">
-                            <p>Inicio</p> 
-                            <div>                           
-                                <spam class="fas fa-arrow-circle-right ico"></spam>
-                            </div>
-                        </button>
-                    </a>
-                    <div class="dropdown text-center margen_izquierdo">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Ayuda</p> 
-                        </button>              
-                        <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                            <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="ayuda.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                </div>               
-<!-------------------------FICHAS   SERVICIO   PATRIMONIO   CONSULTAS    ESTRUCTURA-------------------------------->
-                <div class="row n3 justify-content-around">
-                    <div class="dropdown text-center">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Fichas</p> 
-                        </button>              
-                        <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                            <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="fichas.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                    <div class="dropdown text-center">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Servicio</p> 
-                        </button>              
-                        <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                            <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="principal.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                    <div class="dropdown text-center">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Patrimonio</p> 
-                        </button>              
-                        <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                            <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="principal.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                    <div class="dropdown text-center">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Consultas</p> 
-                        </button>              
-                        <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                            <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="principal.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>               
-                    <div class="dropleftdown text-center">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Estructura</p> 
-                        </button>              
-                        <div class="dropdown-menu fondo ancho_descripcion descripcion p-0">
-                            <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="estructura.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                </div>
-<!----------------------------------------ESTRUCTURA DEPARTAMENTAL------------------------------------------------->
-                <div class="row n4 justify-content-end">
-                    <div class="dropleftup text-center">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Estructura<br>Departamental</p> 
-                        </button>              
-                        <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                            <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="empleados_sector_hard.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                </div>
+        <!----------------------------------------->
+        <div id="grilla_organigrama" class="grilla_organigrama_celular1 grilla_organigrama_celular2">
+            <div id="nivel1">
+                <p>Registro</p>
             </div>
-<!-------------------------MAPA CELULAR-------------------------------->
-            <div class="mapa_celular">
-                <div class="row">
-<!-------------------------REGISTRO-------------------------------->
-                    <div class="raviol n1_celular pt-2 margen_izquierdo_celular">
-                        <p>Registro</p>
-                    </div>
-                </div>
-<!-------------------------INICIO  AYUDA-------------------------------->
-                <div class="row">
-                    <div class="dropright text-center margen_izquierdo_celular">
-                        <a href="principal.html">
-                        <button type="button" class="raviol btn btn-sm btn-secondary" aria-haspopup="true" aria-expanded="false">
-                            <p>Inicio</p>
-                        </button> 
-                        </a>        
-                    </div>
-                    <div class="dropright text-center margen_izquierdo_celular">
-                        <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p>Ayuda</p>
-                        </button>         
-                        <div class="dropdown-menu ancho_descripcion descripcion p-0">                           
-                            <p class="p-4">xxxLorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                            <div class="ir">
-                                <a href="ayuda.html">
-                                    <spam class="fas fa-arrow-circle-right ico"></spam>
-                                </a>
-                            </div>
-                        </div>      
-                    </div>
-                </div>               
-<!-------------------------FICHAS   SERVICIO   PATRIMONIO   CONSULTAS    ESTRUCTURA-------------------------------->
-                <div class="n_celular">
-                    <div class="row">
-                        <div class="dropright text-center">
-                            <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <p class="">Fichas</p> 
-                            </button>              
-                            <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                                <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                                <div class="ir">
-                                    <a href="fichas.html">
-                                        <spam class="fas fa-arrow-circle-right ico"></spam>
-                                    </a>
-                                </div>    
-                            </div>      
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="dropright text-center">
-                            <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <p class="">Servicio</p> 
-                            </button>              
-                            <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                                <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                                <div class="ir">
-                                    <a href="#">
-                                        <spam class="fas fa-arrow-circle-right ico"></spam>
-                                    </a>
-                                </div>
-                            </div>      
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="dropright text-center">
-                            <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <p class="">Patrimonio</p> 
-                            </button>              
-                            <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                                <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                                <div class="ir">
-                                    <a href="#">
-                                        <spam class="fas fa-arrow-circle-right ico"></spam>
-                                    </a>
-                                </div>
-                            </div>      
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="dropupright text-center">
-                            <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <p class="">Consultas</p> 
-                            </button>              
-                            <div class="dropdown-menu ancho_descripcion descripcion p-0">
-                                <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                                <div class="ir">
-                                    <a href="#">
-                                        <spam class="fas fa-arrow-circle-right ico"></spam>
-                                    </a>
-                                </div>
-                            </div>      
-                        </div>  
-                    </div>  
-                    <div class="row">          
-                        <div class="dropupright text-center">
-                            <button type="button" class="raviol btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <p class="">Estructura</p> 
-                            </button>              
-                            <div class="dropdown-menu fondo ancho_descripcion descripcion p-0">
-                                <p class="p-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex ducimus, odio tenetur ratione omnis reiciendis fuga. Mollitia eius voluptatum consequuntur labore facilis nobis molestias error architecto, accusamus fugiat ipsa at?</p>             
-                                <div class="ir">
-                                    <a href="estructura.html">
-                                        <spam class="fas fa-arrow-circle-right ico"></spam>
-                                    </a>
-                                </div>    
-                            </div>      
-                        </div>
-                    </div> 
-                </div>
-            </div>           
-        </main>
-<!-----------------------------------------------REDES SOCIALES---------------------------------------------------->
-        <footer class="btn-group col-12 p-0 m-0 mt-2" role="group" aria-label="Basic example">        
+            <div class="nivel2a1" id="nivel2a">
+                <a class="enlace_mapa" href="principal.html">
+                    <p>Inicio</p>
+                </a>
+            </div>
+            <div class="nivel2b1" id="nivel2b">
+                <a href="ayuda.html">
+                    <p>Ayuda</p>
+                </a>
+            </div>
+            <div id="nivel3a">
+                <a href="fichas.html">
+                    <p>Fichas</p>
+                </a>
+            </div>
+            <div id="nivel3b">
+                <a href="construccion.html">
+                    <p>Servicios</p>
+                </a>
+            </div>
+            <div id="nivel3c">
+                <a href="construccion.html">
+                    <p>Patrimonio</p>
+                </a>
+            </div>
+            <div id="nivel3d">
+                <a href="construccion.html">
+                    <p>Consulta</p>
+                </a>
+            </div>
+            <div id="nivel3e">
+                <a href="estructura.html">
+                    <p>Estructura</p>
+                </a>
+            </div>
+            <div class="niv4a1" id="nivel4a1">
+                <p>Alta Equipo</p>
+                <p>Baja Equipo</p>
+            </div>
+            <div class="niv4b1" id="nivel4b1">
+                <p>Alta Servicio</p>
+                <p>Baja Servicio</p>
+                <p>Cierre Servicio</p>
+            </div>
+            <div class="niv4c1" id="nivel4c1">
+                <p>Alta Patrimonial</p>
+                <p>Baja Patrimonial</p>
+                <p>Movimiento Patrimonial</p>
+            </div>
+            <div class="niv4d1" id="nivel4d1">
+                <p>Plantel</p>
+                <p>Departamento Hardware</p>
+                <p>Departamento Software</p>
+                <p>Departamento Administrativo</p>
+            </div>
+
+
+
+        </div>
+        <!----------------REDES SOCIALES--------------------->
+        <footer class="btn-group col-12 p-0 m-0 margen_superior_pie_mapa" role="group" aria-label="Basic example">
             <button type="button" class="btn redes twiter">
-                <a href="#">
+                <a href="https://twitter.com/?lang=es">
                     <span class="fab fa-twitter fa-lg blackiconcolor"></span>
                 </a>
             </button>
             <button type="button" class="btn redes facebook">
-                <a href="#">
+                <a href="https://www.facebook.com/">
                     <span class="fab fa-facebook-f fa-lg blackiconcolor"></span>
                 </a>
             </button>
             <button type="button" class="btn redes in">
-                <a href="#">
+                <a href="https://ar.linkedin.com/">
                     <span class="fab fa-linkedin-in fa-lg  blackiconcolor"></span>
                 </a>
             </button>
             <button type="button" class="btn redes mail">
-                <a href="#"><span class="fas fa-at fa-lg blackiconcolor"></span>
+                <a href="https://mail.google.com/mail/u/0/?ogbl#inbox">
+                    <span class="fas fa-at fa-lg blackiconcolor"></span>
                 </a>
             </button>
             <button type="button" class="btn redes whatsapp">
-                <a href="#">
+                <a href="https://www.whatsapp.com/download/?lang=es">
                     <span class="fab fa-whatsapp fa-lg blackiconcolor"></span>
                 </a>
-            </button>      
+            </button>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
