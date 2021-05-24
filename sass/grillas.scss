@@ -1,3 +1,4 @@
+/*********************GRILLA MAPA DEL SITIO***************************/
 #grilla_organigrama {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -11,7 +12,7 @@
   font-weight: bold;
 }
 
-div#nivel1 {
+article#nivel1 {
   grid-area: nivel1;
   width: 400px;
   height: 40px;
@@ -93,7 +94,7 @@ div#nivel3e {
   border-radius: 10px;
 }
 
-div#nivel4a1 {
+section#nivel4a1 {
   grid-area: nivel4a1;
   width: 130px;
   height: 90px;
@@ -104,7 +105,7 @@ div#nivel4a1 {
   margin-right: 100px;
 }
 
-div#nivel4b1 {
+section#nivel4b1 {
   grid-area: nivel4b1;
   width: 160px;
   height: 130px;
@@ -114,7 +115,7 @@ div#nivel4b1 {
   border-radius: 10px;
 }
 
-div#nivel4c1 {
+section#nivel4c1 {
   grid-area: nivel4c1;
   width: 200px;
   height: 130px;
@@ -124,7 +125,7 @@ div#nivel4c1 {
   border-radius: 10px;
 }
 
-div#nivel4d1 {
+section#nivel4d1 {
   grid-area: nivel4d1;
   width: 180px;
   height: 220px;
@@ -135,14 +136,6 @@ div#nivel4d1 {
   margin-left: 260px;
 }
 
-#grilla_organigrama p {
-  width: 70%;
-  margin-top: 10px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .nivel2a1 {
   margin-left: 65%;
 }
@@ -151,19 +144,26 @@ div#nivel4d1 {
   margin-left: 50px;
 }
 
-#grilla_organigrama p {
-  width: 70%;
-  margin-top: 10px;
-  margin-bottom: 0;
-  margin-left: auto;
-  margin-right: auto;
+#grilla_organigrama {
+  a:hover {
+    color: black;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  P {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  div:hover {
+    background-color: rgb(141, 35, 75);
+  }
+  section {
+    font-style: italic;
+  }
 }
-
-#grilla_organigrama a {
-  text-decoration: none;
-  color: white;
-}
-
-#grilla_organigrama a:hover {
-  color: black;
-}
+/****************************************************************/

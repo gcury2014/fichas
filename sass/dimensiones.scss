@@ -1,4 +1,4 @@
-/*************** PANTALLA GENERAL DESKTOP ************************/
+/*************************DESKTOP ************************/
 /*********************************************************/
 @media screen and (min-width: 950px) {
   .margen_superior_pie_mapa {
@@ -38,7 +38,7 @@
     margin-right: auto;
     margin-top: 50px;
   }
-  /***************GRILLA ESTRUCTURA DESKTOP************************/
+  /***************GRILLA ESTRUCTURA************************/
   #grid {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -195,10 +195,22 @@
   }
 }
 
-/*************** PANTALLA GENERAL CELULARES ************************/
+/*************** CELULARES ************************/
 @media screen and (max-width: 950px) {
-  .margen_superior_pie_mapa {
-    margin-top: 100px !important;
+  .mapa_desk {
+    display: none;
+  }
+
+  .grilla_organigrama_celular2 {
+    grid-template-rows: 60px 60px 60px 100px !important;
+  }
+
+  .n_celular {
+    margin-left: 250px;
+  }
+
+  .margen_izquierdo_celular {
+    margin-left: 50px;
   }
 
   #nivel1 {
@@ -215,36 +227,57 @@
 
   #nivel3a {
     font-size: 80%;
+    margin-left: 100px;
+    height: 150px;
   }
+
   #nivel3b {
-    font-size: 80%;
+    font-size: 80% !important;
+    width: 100px;
+    font-size: 60%;
+    p {
+      margin-left: 10px !important;
+    }
   }
+
   #nivel3c {
-    font-size: 80%;
+    font-size: 70%;
+    p {
+      margin-left: 10px !important;
+    }
   }
+
   #nivel3d {
     font-size: 80%;
+    p {
+      margin-left: 10px !important;
+    }
   }
+
   #nivel3e {
     font-size: 80%;
+    p {
+      margin-left: 10px !important;
+    }
   }
 
-  .niv4a1 {
-    font-size: 80%;
-    width: 100px !important;
+  #nivel4a1 {
+    font-size: 60%;
+    width: 80px !important;
     height: 80px !important;
+    margin-left: 100px;
   }
 
-  .niv4b1 {
-    font-size: 80%;
-    width: 100px !important;
-    height: 150px !important;
+  #nivel4b1 {
+    font-size: 60%;
+    width: 80px !important;
+    height: 130px !important;
   }
 
   .niv4c1 {
     font-size: 80%;
-    width: 100px !important;
-    height: 150px !important;
+    width: 90px !important;
+    height: 160px !important;
   }
 
   .niv4d1 {
@@ -298,24 +331,34 @@
     display: none;
   }
   /***********ESTRUCTURA JERARQUICA  PARA CELULARES *************/
+  .nivel1_estructura {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nivel2_estructura {
+    margin-bottom: 170px;
+  }
+
   .card_celu {
     width: 200px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .mostrar_estructura h2 {
-    font-size: 2em;
-    text-align: center;
-  }
-
-  .mostrar_estructura a {
-    text-decoration: none;
-    color: grey;
-  }
-
-  .mostrar_estructura a:hover {
-    color: black;
+  .mostrar_estructura {
+    a {
+      text-decoration: none;
+      color: grey;
+    }
+    a:hover {
+      color: black;
+    }
+    h2 {
+      font-size: 2em;
+      text-align: center;
+    }
   }
 
   .boton_subdireccion {
@@ -335,22 +378,16 @@
     box-shadow: 2px 2px grey;
     border-radius: 5px;
   }
-
-  .nivel1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+  /*************************************************************/
+  /*********************GENERAL********************************/
+  .margen_superior_pie_mapa {
+    margin-top: 100px !important;
   }
-
-  .nivel2 {
-    margin-bottom: 170px;
-  }
-
   .principal_desk {
     display: none;
   }
 }
-/*************** MAPA CELULAR 1 ************************/
+/***************MAPA CELULAR************************/
 @media screen and (max-width: 750px) {
   .margen_superior_pie_mapa {
     margin-top: 40px !important;
@@ -361,25 +398,37 @@
   }
 
   #nivel3a {
-    font-size: 50%;
+    font-size: 60%;
     margin-left: 100px;
   }
   #nivel3b {
-    font-size: 50%;
+    font-size: 60% !important;
+    p {
+      margin-left: 1px !important;
+    }
   }
   #nivel3c {
-    font-size: 40%;
+    font-size: 50%;
+    p {
+      margin-left: 1px !important;
+    }
   }
   #nivel3d {
     font-size: 50%;
+    p {
+      margin-left: 5px !important;
+    }
   }
   #nivel3e {
     font-size: 50%;
+    p {
+      margin-left: 5px !important;
+    }
   }
 
   .niv4a1 {
     font-size: 50%;
-    width: 80px !important;
+    width: 60px !important;
     height: 60px !important;
     margin-left: 100px !important;
   }
@@ -393,7 +442,7 @@
   .niv4c1 {
     font-size: 50%;
     width: 100px !important;
-    height: 90px !important;
+    height: 80px !important;
   }
 
   .niv4d1 {
@@ -403,28 +452,3 @@
     margin-right: 60px !important;
   }
 }
-/*************** MAPA CELULAR 2 ************************/
-@media screen and (max-width: 1000px) {
-  .mapa_desk {
-    display: none;
-  }
-
-  .grilla_organigrama_celular2 {
-    grid-template-rows: 60px 60px 60px 100px !important;
-  }
-
-  .n1_celular {
-    margin-top: 20px;
-    margin-bottom: 10px !important;
-  }
-
-  .n_celular {
-    margin-left: 250px;
-  }
-
-  .margen_izquierdo_celular {
-    margin-left: 50px;
-  }
-}
-
-/***************************************************************/
