@@ -510,14 +510,21 @@
     margin-right: 60px !important; } }
 
 @media (max-width: 480px) {
-  .comming h2 {
-    font-size: 40px; }
+  .dimen {
+    font-size: 40px !important; }
   .encuadrar {
-    width: 95%; }
+    width: 85% !important; }
+  .img_login {
+    margin-left: 20px; }
   .usuario {
-    margin: auto; }
+    margin-left: auto !important;
+    margin-right: auto !important; }
+  .contrasena {
+    margin-left: auto !important;
+    margin-right: auto !important; }
   .enviar {
-    margin: auto; }
+    margin-left: auto !important;
+    margin-right: auto !important; }
   .restablecer {
     margin: auto; }
   #registrarse {
