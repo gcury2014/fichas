@@ -56,37 +56,32 @@
     border: 1px solid black;
     box-shadow: 2px 2px grey;
     border-radius: 3px;
-    width: 1200px;
+    width: 900px;
     height: 100%;
   }
 
   .grilla {
+    a {
+      text-decoration: none;
+      color: rgb(75, 72, 72);
+    }
+    a:hover {
+      color: rgb(0, 0, 0);
+    }
     font-style: italic;
-  }
-
-  .grilla a {
-    text-decoration: none;
-    color: rgb(75, 72, 72);
-  }
-
-  .grilla a:hover {
-    color: rgb(0, 0, 0);
-  }
-
-  .tit_sop_ext {
-    margin-top: 60px;
-    text-align: center;
-  }
-
-  .fuentes_areas p {
-    margin-left: 90px;
-    margin-right: 90px;
-    font-size: 20px;
-  }
-
-  .tit_subdireccion p {
-    margin-left: 250px;
-    margin-right: 250px;
+    .tit_sop_ext {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .fuentes_areas p {
+      margin-left: 50px;
+      margin-right: 50px;
+      font-size: 20px;
+    }
+    .tit_subdireccion p {
+      margin-left: 210px;
+      margin-right: 210px;
+    }
   }
 
   section#titulo_grilla {
@@ -179,7 +174,7 @@
   }
 
   .logo_derecha {
-    margin-left: 1000px;
+    margin-left: 700px;
   }
 
   .logo_izquierda {
@@ -338,7 +333,7 @@
   }
 
   .nivel2_estructura {
-    margin-bottom: 170px;
+    margin-bottom: 40px;
   }
 
   .card_celu {
