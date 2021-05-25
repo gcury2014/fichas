@@ -509,6 +509,20 @@
     height: 130px !important;
     margin-right: 60px !important; } }
 
+@media (max-width: 480px) {
+  .comming h2 {
+    font-size: 40px; }
+  .encuadrar {
+    width: 95%; }
+  .usuario {
+    margin: auto; }
+  .enviar {
+    margin: auto; }
+  .restablecer {
+    margin: auto; }
+  #registrarse {
+    width: 100%; } }
+
 @keyframes rotar {
   0% {
     transform: rotate(0deg); }
