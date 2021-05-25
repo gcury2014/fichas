@@ -13,7 +13,7 @@
   padding-top: 120px; }
   .coming h2 {
     color: #f15c58;
-    font-size: 55px;
+    font-size: 10vw;
     font-weight: bolder;
     font-family: "Raleway", sans-serif; }
   .coming p {
@@ -510,8 +510,6 @@
     margin-right: 60px !important; } }
 
 @media (max-width: 480px) {
-  .dimen {
-    font-size: 40px !important; }
   .encuadrar {
     width: 85% !important; }
   .img_login {
