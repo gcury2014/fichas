@@ -13,7 +13,7 @@
   padding-top: 120px; }
   .coming h2 {
     color: #f15c58;
-    font-size: 55px;
+    font-size: 10vw;
     font-weight: bolder;
     font-family: "Raleway", sans-serif; }
   .coming p {
@@ -40,8 +40,7 @@
   margin-right: auto;
   background-color: #0048cd;
   border-radius: 15px;
-  width: 400px;
-  padding-right: 0; }
+  width: 400px; }
 
 .fondo_logo {
   background-color: midnightblue; }
@@ -79,19 +78,23 @@
 .usuario {
   width: 100%;
   display: inline-flex;
-  margin-left: 30px; }
+  justify-content: center; }
+  .usuario input {
+    margin: 0; }
 
 .contrasena {
   width: 100%;
   display: inline-flex;
-  margin-left: 30px; }
+  justify-content: center; }
+  .contrasena input {
+    margin: 0; }
 
 .enviar {
   width: 270px;
   height: 40px;
   margin-left: 60px;
   border-radius: 15px;
-  background-color: navy;
+  background-color: indigo;
   color: white; }
 
 .restablecer {
@@ -116,16 +119,11 @@
   margin-top: 20px; }
 
 .img_logo {
-  margin-left: auto;
-  margin-right: auto;
-  background: url(../recursos/imagenes/logo.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+  text-align: center;
   height: 250px;
-  width: 70%; }
+  width: 100%; }
 
 .img_login {
-  margin: 15px 0 0 20px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px; }
 
@@ -208,73 +206,107 @@
 .logo_pie {
   display: inline-block; }
 
-@media screen and (max-width: 450px) {
-  .principal_celular {
-    display: none; } }
-
-<<<<<<< HEAD
-=======
 /*************** CELULARES ************************/
-@media screen and (max-width: 950px) {
-  .mapa_desk {
+@media (max-width: 950px) {
+  /***************RESPONSIVE LOGIN****************/
+  .encuadrar {
+    width: 50% !important; }
+  .img_logo {
+    height: 200px; }
+  .sub_titulo {
+    margin-top: 10px !important; }
+  .enviar {
+    margin: auto !important; }
+  .restablecer {
+    margin: auto; }
+  #registrarse {
+    width: 100%; }
+  /***************************************************/
+  /*****************GRILLA MAPA DEL SITIO********************/
+  #grilla_organigrama_celular {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 30px 100px 100px;
+    grid-template-areas: "nivel1_celular   nivel1_celular   nivel1_celular   nivel1_celular   nivel1_celular" "nivel2a_celular  nivel2a_celular  nivel2a_celular  nivel2a_celular  nivel2b_celular" "nivel3a_celular  nivel3b_celular  nivel3c_celular  nivel3d_celular  nivel3e_celular";
+    /* "nivel4a1 nivel4b1 nivel4c1 nivel4d1 nivel4d1";*/
+    font-weight: bold;
+    width: 100vw; }
+    #grilla_organigrama_celular article.nivel1_celular {
+      grid-area: nivel1_celular;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      background-color: #b47fb4;
+      margin: 0;
+      padding-top: 5px;
+      font-size: 1em; }
+    #grilla_organigrama_celular div.nivel2a_celular {
+      grid-area: nivel2a_celular;
+      height: 100%;
+      background-color: #863228;
+      text-align: center;
+      margin: 0;
+      padding-top: 20px;
+      font-size: 2em; }
+    #grilla_organigrama_celular div.nivel2b_celular {
+      grid-area: nivel2b_celular;
+      height: 100%;
+      background-color: #8be932;
+      text-align: center;
+      margin: 0px;
+      padding-top: 20px;
+      font-size: 1.5em; }
+    #grilla_organigrama_celular div.nivel3a_celular {
+      grid-area: nivel3a_celular;
+      height: 100%;
+      background-color: #5a5e77;
+      text-align: center;
+      margin: 0px;
+      padding-top: 30px;
+      font-size: 0.8em; }
+    #grilla_organigrama_celular div.nivel3b_celular {
+      grid-area: nivel3b_celular;
+      height: 100%;
+      background-color: #e9dd32;
+      text-align: center;
+      margin: 0px;
+      padding-top: 30px;
+      font-size: 0.8em; }
+    #grilla_organigrama_celular div.nivel3c_celular {
+      grid-area: nivel3c_celular;
+      height: 100%;
+      background-color: #e97532;
+      text-align: center;
+      margin: 0px;
+      padding-top: 30px;
+      font-size: 0.8em; }
+    #grilla_organigrama_celular div.nivel3d_celular {
+      grid-area: nivel3d_celular;
+      height: 100%;
+      background-color: #7b74be;
+      text-align: center;
+      margin: 0px;
+      padding-top: 30px;
+      font-size: 0.8em; }
+    #grilla_organigrama_celular div.nivel3e_celular {
+      grid-area: nivel3e_celular;
+      height: 100%;
+      background-color: #e932e0;
+      text-align: center;
+      margin: 0px;
+      padding-top: 30px;
+      font-size: 0.8em; }
+    #grilla_organigrama_celular a {
+      text-decoration: none; }
+    #grilla_organigrama_celular div:hover {
+      background-color: sienna; }
+  /**************************************************/
+  .mostrar_mapa_desk {
     display: none; }
-  .grilla_organigrama_celular2 {
-    grid-template-rows: 60px 60px 60px 100px !important; }
-  .n_celular {
-    margin-left: 250px; }
   .margen_izquierdo_celular {
     margin-left: 50px; }
-  #nivel1 {
-    width: 40% !important; }
-  #nivel2a {
-    width: 50% !important; }
-  #nivel2b {
-    width: 50% !important; }
-  #nivel3a {
-    font-size: 80%;
-    margin-left: 100px;
-    height: 150px; }
-  #nivel3b {
-    font-size: 80% !important;
-    width: 100px;
-    font-size: 60%; }
-    #nivel3b p {
-      margin-left: 10px !important; }
-  #nivel3c {
-    font-size: 70%; }
-    #nivel3c p {
-      margin-left: 10px !important; }
-  #nivel3d {
-    font-size: 80%; }
-    #nivel3d p {
-      margin-left: 10px !important; }
-  #nivel3e {
-    font-size: 80%; }
-    #nivel3e p {
-      margin-left: 10px !important; }
-  #nivel4a1 {
-    font-size: 60%;
-    width: 80px !important;
-    height: 80px !important;
-    margin-left: 100px; }
-  #nivel4b1 {
-    font-size: 60%;
-    width: 80px !important;
-    height: 130px !important; }
-  .niv4c1 {
-    font-size: 80%;
-    width: 90px !important;
-    height: 160px !important; }
-  .niv4d1 {
-    font-size: 80%;
-    height: 180px !important;
-    margin-left: 180px !important; }
   .grilla_engranaje_desk {
     display: none; }
-  .cuerpo_principal_celular {
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto; }
   .grilla_engranaje_celular {
     display: grid;
     grid-template-columns: 33% 33% 33%;
@@ -338,72 +370,263 @@
   .principal_desk {
     display: none; } }
 
-/***************MAPA CELULAR************************/
-@media screen and (max-width: 750px) {
+/*************************DESKTOP ************************/
+/*********************************************************/
+@media (min-width: 951px) {
+  .mostrar_mapa_celular {
+    display: none; }
   .margen_superior_pie_mapa {
-    margin-top: 40px !important; }
-  .grilla_organigrama_celular1 {
-    grid-template-rows: 60px 60px 60px 100px !important; }
-  #nivel3a {
-    font-size: 60%;
-    margin-left: 100px; }
-  #nivel3b {
-    font-size: 60% !important; }
-    #nivel3b p {
-      margin-left: 1px !important; }
-  #nivel3c {
-    font-size: 50%; }
-    #nivel3c p {
-      margin-left: 1px !important; }
-  #nivel3d {
-    font-size: 50%; }
-    #nivel3d p {
-      margin-left: 5px !important; }
-  #nivel3e {
-    font-size: 50%; }
-    #nivel3e p {
-      margin-left: 5px !important; }
-  .niv4a1 {
-    font-size: 50%;
-    width: 60px !important;
-    height: 60px !important;
-    margin-left: 100px !important; }
-  .niv4b1 {
-    font-size: 50%;
-    width: 100px !important;
-    height: 80px !important; }
-  .niv4c1 {
-    font-size: 50%;
-    width: 100px !important;
-    height: 80px !important; }
-  .niv4d1 {
-    font-size: 50%;
-    width: 80px !important;
-    height: 130px !important;
-    margin-right: 60px !important; } }
+    margin-top: 180px !important; }
+  .grilla_engranaje_celular {
+    display: none; }
+  .cuerpo_principal_desk {
+    margin-top: 400px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto; }
+  .grilla_engranaje_desk {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100px;
+    grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
+    margin-top: 450px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    height: 100%;
+    margin-left: 260px; }
+  .card_desk {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px; }
+  /***************GRILLA ESTRUCTURA************************/
+  #grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100px 150px 100px 100px 80px;
+    grid-template-areas: "titulo_grilla       titulo_grilla       titulo_grilla       titulo_grilla" "subdireccion        subdireccion        subdireccion        subdireccion" "depto_hard          depto_soft          depto_adm           sop_ext" "emp_hard            emp_soft            emp_adm             sop_ext" "pie_grilla          pie_grilla          pie_grilla          pie_grilla";
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    border-radius: 3px;
+    width: 900px;
+    height: 100%;
+    font-style: italic; }
+    #grid a {
+      text-decoration: none;
+      color: #4b4848; }
+    #grid a:hover {
+      color: black; }
+    #grid .tit_sop_ext {
+      margin-top: 60px;
+      text-align: center; }
+    #grid .fuentes_areas p {
+      margin-left: 50px;
+      margin-right: 50px;
+      font-size: 20px; }
+    #grid .tit_subdireccion p {
+      margin-left: 210px;
+      margin-right: 210px; }
+    #grid section#titulo_grilla {
+      background-color: #494c55;
+      grid-area: titulo_grilla;
+      text-align: center;
+      padding: 15px;
+      color: white;
+      font-size: 50px;
+      font-style: italic;
+      border: 1px solid white;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    #grid section#subdireccion {
+      background-color: #9ea79d;
+      grid-area: subdireccion;
+      padding: 3%;
+      text-align: center;
+      font-size: 30px;
+      border: 1px solid white;
+      padding-top: 30px; }
+    #grid section#subdireccion:hover {
+      background-color: #778376; }
+    #grid section#sop_ext {
+      background-color: #8da08b;
+      grid-area: sop_ext;
+      border: 1px solid white; }
+    #grid .departamento:hover {
+      background-color: #778376; }
+    #grid section#hard {
+      grid-area: depto_soft; }
+    #grid section#depto_soft {
+      grid-area: depto_soft; }
+    #grid section#depto_adm {
+      grid-area: depto_adm; }
+    #grid article#emp_hard {
+      background-color: #a8b3a7;
+      grid-area: emp_hard;
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid white; }
+    #grid article#emp_soft {
+      background-color: #a8b3a7;
+      grid-area: emp_soft;
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid white; }
+    #grid article#emp_adm {
+      background-color: #a8b3a7;
+      grid-area: emp_adm;
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid white; }
+    #grid section#pie_grilla {
+      padding-top: 20px;
+      background-color: grey;
+      grid-area: pie_grilla;
+      border: 1px solid white;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    #grid .departamento {
+      background-color: #a8b3a7;
+      text-align: center;
+      padding-top: 20px;
+      border: 1px solid white; }
+    #grid .logo_derecha {
+      margin-left: 700px; }
+    #grid .logo_izquierda {
+      margin-left: 30px; }
+  .mostrar_estructura {
+    display: none; }
+  .principal_celular {
+    display: none; }
+  /*******************GRILLA MAPA DEL SITIO************************/
+  #grilla_organigrama {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-areas: "nivel1   nivel1   nivel1   nivel1   nivel1" "nivel2a  nivel2a  nivel2a  nivel2b  nivel2b" "nivel3a  nivel3b  nivel3c  nivel3d  nivel3e" "nivel4a1 nivel4b1 nivel4c1 nivel4d1 nivel4d1";
+    justify-items: center;
+    font-weight: bold; }
+    #grilla_organigrama article#nivel1 {
+      grid-area: nivel1;
+      width: 400px;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #b47fb4;
+      border-radius: 10px;
+      margin-top: 10px; }
+    #grilla_organigrama div#nivel2a {
+      grid-area: nivel2a;
+      width: 200px;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #a04fa0;
+      border-radius: 10px; }
+    #grilla_organigrama div#nivel2b {
+      grid-area: nivel2b;
+      width: 200px;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #a04fa0;
+      border-radius: 10px; }
+    #grilla_organigrama div#nivel3a {
+      grid-area: nivel3a;
+      width: 50%;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #a04fa0;
+      margin-right: 100px;
+      border-radius: 10px; }
+    #grilla_organigrama div#nivel3b {
+      grid-area: nivel3b;
+      width: 50%;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #a04fa0;
+      border-radius: 10px; }
+    #grilla_organigrama div#nivel3c {
+      grid-area: nivel3c;
+      width: 50%;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #a04fa0;
+      border-radius: 10px; }
+    #grilla_organigrama div#nivel3d {
+      grid-area: nivel3d;
+      width: 50%;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #a04fa0;
+      border-radius: 10px; }
+    #grilla_organigrama div#nivel3e {
+      grid-area: nivel3e;
+      width: 50%;
+      height: 40px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #a04fa0;
+      border-radius: 10px; }
+    #grilla_organigrama section#nivel4a1 {
+      grid-area: nivel4a1;
+      width: 130px;
+      height: 90px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #b47fb4;
+      border-radius: 10px;
+      margin-right: 100px; }
+    #grilla_organigrama section#nivel4b1 {
+      grid-area: nivel4b1;
+      width: 160px;
+      height: 130px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #b47fb4;
+      border-radius: 10px; }
+    #grilla_organigrama section#nivel4c1 {
+      grid-area: nivel4c1;
+      width: 200px;
+      height: 130px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #b47fb4;
+      border-radius: 10px; }
+    #grilla_organigrama section#nivel4d1 {
+      grid-area: nivel4d1;
+      width: 180px;
+      height: 220px;
+      border: 1px solid yellow;
+      text-align: center;
+      background-color: #b47fb4;
+      border-radius: 10px;
+      margin-left: 260px; }
+    #grilla_organigrama .nivel2a1 {
+      margin-left: 65%; }
+    #grilla_organigrama .nivel2b1 {
+      margin-left: 50px; }
+    #grilla_organigrama a:hover {
+      color: black; }
+    #grilla_organigrama a {
+      text-decoration: none;
+      color: white; }
+    #grilla_organigrama P {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      margin-top: 10px;
+      margin-bottom: 0; }
+    #grilla_organigrama section {
+      font-style: italic; } }
 
-@media (max-width: 480px) {
-  .dimen {
-    font-size: 40px !important; }
-  .encuadrar {
-    width: 85% !important; }
-  .img_login {
-    margin-left: 20px; }
-  .usuario {
-    margin-left: auto !important;
-    margin-right: auto !important; }
-  .contrasena {
-    margin-left: auto !important;
-    margin-right: auto !important; }
-  .enviar {
-    margin-left: auto !important;
-    margin-right: auto !important; }
-  .restablecer {
-    margin: auto; }
-  #registrarse {
-    width: 100%; } }
-
->>>>>>> parent of b07b6a5 (responsive Sol)
 @keyframes rotar {
   0% {
     transform: rotate(0deg); }
@@ -500,131 +723,4 @@ body {
   color: black; }
 
 /*********************GRILLA MAPA DEL SITIO***************************/
-@media screen and (min-width: 950px) {
-  #grilla_organigrama {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 100px 100px 100px 100px;
-    grid-template-areas: "nivel1   nivel1   nivel1   nivel1   nivel1" "nivel2a  nivel2a  nivel2a  nivel2b  nivel2b" "nivel3a  nivel3b  nivel3c  nivel3d  nivel3e" "nivel4a1 nivel4b1 nivel4c1 nivel4d1 nivel4d1";
-    justify-items: center;
-    font-weight: bold; }
-  article#nivel1 {
-    grid-area: nivel1;
-    width: 400px;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #b47fb4;
-    border-radius: 10px;
-    margin-top: 10px; }
-  div#nivel2a {
-    grid-area: nivel2a;
-    width: 200px;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #a04fa0;
-    border-radius: 10px; }
-  div#nivel2b {
-    grid-area: nivel2b;
-    width: 200px;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #a04fa0;
-    border-radius: 10px; }
-  div#nivel3a {
-    grid-area: nivel3a;
-    width: 50%;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #a04fa0;
-    margin-right: 100px;
-    border-radius: 10px; }
-  div#nivel3b {
-    grid-area: nivel3b;
-    width: 50%;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #a04fa0;
-    border-radius: 10px; }
-  div#nivel3c {
-    grid-area: nivel3c;
-    width: 50%;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #a04fa0;
-    border-radius: 10px; }
-  div#nivel3d {
-    grid-area: nivel3d;
-    width: 50%;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #a04fa0;
-    border-radius: 10px; }
-  div#nivel3e {
-    grid-area: nivel3e;
-    width: 50%;
-    height: 40px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #a04fa0;
-    border-radius: 10px; }
-  section#nivel4a1 {
-    grid-area: nivel4a1;
-    width: 130px;
-    height: 90px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #b47fb4;
-    border-radius: 10px;
-    margin-right: 100px; }
-  section#nivel4b1 {
-    grid-area: nivel4b1;
-    width: 160px;
-    height: 130px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #b47fb4;
-    border-radius: 10px; }
-  section#nivel4c1 {
-    grid-area: nivel4c1;
-    width: 200px;
-    height: 130px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #b47fb4;
-    border-radius: 10px; }
-  section#nivel4d1 {
-    grid-area: nivel4d1;
-    width: 180px;
-    height: 220px;
-    border: 1px solid yellow;
-    text-align: center;
-    background-color: #b47fb4;
-    border-radius: 10px;
-    margin-left: 260px; }
-  .nivel2a1 {
-    margin-left: 65%; }
-  .nivel2b1 {
-    margin-left: 50px; }
-  #grilla_organigrama a:hover {
-    color: black; }
-  #grilla_organigrama a {
-    text-decoration: none;
-    color: white; }
-  #grilla_organigrama P {
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    margin-top: 10px;
-    margin-bottom: 0; }
-  #grilla_organigrama div:hover {
-    background-color: #8d234b; }
-  #grilla_organigrama section {
-    font-style: italic; }
-  /****************************************************************/ }
+/****************************************************************/
