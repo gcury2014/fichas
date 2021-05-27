@@ -19,7 +19,6 @@
   .coming p {
     color: #8f8686;
     font-size: 27px;
-    padding-top: 120px;
     font-weight: 400;
     font-family: "Raleway", sans-serif; }
 
@@ -48,6 +47,7 @@
 .titulo {
   text-align: center;
   margin-top: 10px;
+  width: 100%;
   color: white; }
 
 .titulo_pagina {
@@ -143,7 +143,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgba(211, 211, 211, 0.7);
   max-width: 100%; }
 
 .margen_izquierdo {
@@ -175,9 +174,6 @@
 
 .negrita {
   font-weight: bold; }
-
-.enlace_mapa:hover {
-  background-color: #8f8686; }
 
 .margen_superior {
   margin-top: 160px; }
@@ -212,12 +208,18 @@
   .encuadrar {
     width: 50% !important; }
   .img_logo {
-    height: 200px; }
+    height: 200px;
+    margin-bottom: 10px; }
+  .img_login {
+    width: 180px;
+    height: 180px; }
   .sub_titulo {
     margin-top: 10px !important; }
   .enviar {
-    margin: auto !important; }
+    width: 70% !important;
+    margin: auto; }
   .restablecer {
+    width: 70% !important;
     margin: auto; }
   #registrarse {
     width: 100%; }
@@ -226,9 +228,8 @@
   #grilla_organigrama_celular {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 30px 100px 100px;
-    grid-template-areas: "nivel1_celular   nivel1_celular   nivel1_celular   nivel1_celular   nivel1_celular" "nivel2a_celular  nivel2a_celular  nivel2a_celular  nivel2a_celular  nivel2b_celular" "nivel3a_celular  nivel3b_celular  nivel3c_celular  nivel3d_celular  nivel3e_celular";
-    /* "nivel4a1 nivel4b1 nivel4c1 nivel4d1 nivel4d1";*/
+    grid-template-rows: 30px 100px 100px 220px 20px;
+    grid-template-areas: "nivel1_celular   nivel1_celular   nivel1_celular   nivel1_celular   nivel1_celular" "nivel2a_celular  nivel2a_celular  nivel2a_celular  nivel2a_celular  nivel2b_celular" "nivel3a_celular  nivel3b_celular  nivel3c_celular  nivel3d_celular  nivel3e_celular" "nivel4a_celular  nivel4b_celular  nivel4c_celular  nivel4d_celular  nivel4e_celular" "nivel5a_celular  nivel5b_celular  nivel5b_celular  nivel5b_celular  nivel5c_celular";
     font-weight: bold;
     width: 100vw; }
     #grilla_organigrama_celular article.nivel1_celular {
@@ -236,73 +237,96 @@
       width: 100%;
       height: 100%;
       text-align: center;
-      background-color: #b47fb4;
+      background-color: rgba(63, 153, 238, 0.5);
       margin: 0;
-      padding-top: 5px;
-      font-size: 1em; }
-    #grilla_organigrama_celular div.nivel2a_celular {
+      padding-top: 2px;
+      font-size: 1em;
+      border-bottom: 4px solid black; }
+    #grilla_organigrama_celular div {
+      height: 100%;
+      text-align: center;
+      margin: 0;
+      border: 3px solid grey;
+      background-color: rgba(145, 50, 39, 0.7); }
+      #grilla_organigrama_celular div p {
+        letter-spacing: 2px;
+        padding-top: 20px; }
+    #grilla_organigrama_celular .nivel2a_celular {
       grid-area: nivel2a_celular;
-      height: 100%;
-      background-color: #863228;
-      text-align: center;
-      margin: 0;
-      padding-top: 20px;
       font-size: 2em; }
-    #grilla_organigrama_celular div.nivel2b_celular {
+    #grilla_organigrama_celular .nivel2b_celular {
       grid-area: nivel2b_celular;
-      height: 100%;
-      background-color: #8be932;
-      text-align: center;
-      margin: 0px;
-      padding-top: 20px;
       font-size: 1.5em; }
-    #grilla_organigrama_celular div.nivel3a_celular {
+      #grilla_organigrama_celular .nivel2b_celular p {
+        padding-top: 25px; }
+    #grilla_organigrama_celular .nivel3a_celular {
       grid-area: nivel3a_celular;
-      height: 100%;
-      background-color: #5a5e77;
-      text-align: center;
-      margin: 0px;
-      padding-top: 30px;
       font-size: 0.8em; }
-    #grilla_organigrama_celular div.nivel3b_celular {
+      #grilla_organigrama_celular .nivel3a_celular p {
+        padding-top: 30px; }
+    #grilla_organigrama_celular .nivel3b_celular {
       grid-area: nivel3b_celular;
-      height: 100%;
-      background-color: #e9dd32;
-      text-align: center;
-      margin: 0px;
-      padding-top: 30px;
       font-size: 0.8em; }
-    #grilla_organigrama_celular div.nivel3c_celular {
+      #grilla_organigrama_celular .nivel3b_celular p {
+        padding-top: 30px; }
+    #grilla_organigrama_celular .nivel3c_celular {
       grid-area: nivel3c_celular;
-      height: 100%;
-      background-color: #e97532;
-      text-align: center;
-      margin: 0px;
-      padding-top: 30px;
       font-size: 0.8em; }
-    #grilla_organigrama_celular div.nivel3d_celular {
+      #grilla_organigrama_celular .nivel3c_celular p {
+        padding-top: 30px; }
+    #grilla_organigrama_celular .nivel3d_celular {
       grid-area: nivel3d_celular;
-      height: 100%;
-      background-color: #7b74be;
-      text-align: center;
-      margin: 0px;
-      padding-top: 30px;
       font-size: 0.8em; }
-    #grilla_organigrama_celular div.nivel3e_celular {
+      #grilla_organigrama_celular .nivel3d_celular p {
+        padding-top: 30px; }
+    #grilla_organigrama_celular .nivel3e_celular {
       grid-area: nivel3e_celular;
+      font-size: 0.8em; }
+      #grilla_organigrama_celular .nivel3e_celular p {
+        padding-top: 30px; }
+    #grilla_organigrama_celular a {
+      text-decoration: none;
+      color: white; }
+    #grilla_organigrama_celular div:hover {
+      background-color: sienna;
+      border: 3px solid black;
+      color: black;
+      font-style: italic; }
+    #grilla_organigrama_celular section {
       height: 100%;
-      background-color: #e932e0;
+      background-color: rgba(63, 153, 238, 0.9);
       text-align: center;
       margin: 0px;
       padding-top: 30px;
-      font-size: 0.8em; }
-    #grilla_organigrama_celular a {
-      text-decoration: none; }
-    #grilla_organigrama_celular div:hover {
-      background-color: sienna; }
+      font-size: 0.8em;
+      border-right: 1px solid yellow; }
+    #grilla_organigrama_celular section.nivel4a_celular {
+      grid-area: nivel4a_celular; }
+    #grilla_organigrama_celular section.nivel4b_celular {
+      grid-area: nivel4b_celular; }
+    #grilla_organigrama_celular section.nivel4c_celular {
+      grid-area: nivel4c_celular;
+      height: 100%; }
+    #grilla_organigrama_celular section.nivel4d_celular {
+      grid-area: nivel4d_celular; }
+    #grilla_organigrama_celular section.nivel4e_celular {
+      grid-area: nivel4e_celular; }
+    #grilla_organigrama_celular aside.nivel5a_celular {
+      grid-area: nivel5a_celular;
+      background-color: rgba(63, 153, 238, 0.9); }
+    #grilla_organigrama_celular aside.nivel5b_celular {
+      grid-area: nivel5b_celular;
+      text-align: center;
+      background-color: grey;
+      border: 1px solid black; }
+    #grilla_organigrama_celular aside.nivel5c_celular {
+      grid-area: nivel5c_celular;
+      background-color: rgba(63, 153, 238, 0.9); }
   /**************************************************/
   .mostrar_mapa_desk {
     display: none; }
+  .principal_celular {
+    margin: auto; }
   .margen_izquierdo_celular {
     margin-left: 50px; }
   .grilla_engranaje_desk {
@@ -314,8 +338,8 @@
     grid-template-rows: 100px;
     grid-template-areas: "engranaje_izquierda       engranaje_centro       engranaje_derecho";
     margin-bottom: 50px;
-    margin-left: 0;
-    justify-items: flex-end; }
+    justify-items: flex-end;
+    margin: auto; }
   .separacion {
     margin-top: 20px; }
   .sub_titulo {
@@ -709,7 +733,6 @@ div#engranaje_derecho {
   padding: 0; }
 
 body {
-  width: 100%;
   font-family: "Roboto", sans-serif; }
 
 .division {
