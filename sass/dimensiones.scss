@@ -27,6 +27,12 @@
     width: 100%;
   }
   /***************************************************/
+  .margen_fichas_celular {
+    margin-bottom: 300px;
+  }
+  .margen_superior_celular {
+    margin-top: 60px !important;
+  }
   /*****************GRILLA MAPA DEL SITIO********************/
   #grilla_organigrama_celular {
     display: grid;
@@ -70,9 +76,9 @@
     }
     .nivel2b_celular {
       grid-area: nivel2b_celular;
-      font-size: 1.5em;
+      font-size: 1em;
       p {
-        padding-top: 25px;
+        padding-top: 35px;
       }
     }
     .nivel3a_celular {
@@ -461,7 +467,7 @@
       border-radius: 10px;
       margin-top: 10px;
     }
-    div#nivel2a {
+    #nivel2a {
       grid-area: nivel2a;
       width: 200px;
       height: 40px;
@@ -469,7 +475,9 @@
       text-align: center;
       background-color: $mapa_enlace;
       border-radius: 10px;
+      margin-left: 65%;
     }
+
     div#nivel2b {
       grid-area: nivel2b;
       width: 200px;
@@ -534,57 +542,66 @@
       background-color: $mapa;
       border-radius: 10px;
       margin-right: 100px;
+      padding-top: 15px;
     }
     section#nivel4b1 {
       grid-area: nivel4b1;
       width: 160px;
-      height: 130px;
+      height: 140px;
       border: 1px solid yellow;
       text-align: center;
       background-color: $mapa;
       border-radius: 10px;
+      padding-top: 20px;
     }
     section#nivel4c1 {
       grid-area: nivel4c1;
       width: 200px;
-      height: 130px;
+      height: 140px;
       border: 1px solid yellow;
       text-align: center;
       background-color: $mapa;
       border-radius: 10px;
+      padding-top: 20px;
     }
     section#nivel4d1 {
       grid-area: nivel4d1;
-      width: 180px;
-      height: 220px;
+      width: 220px;
+      height: 170px;
       border: 1px solid yellow;
       text-align: center;
       background-color: $mapa;
       border-radius: 10px;
-      margin-left: 260px;
+      margin-left: 270px;
+      padding-top: 20px;
     }
-    .nivel2a1 {
-      margin-left: 65%;
+    .titulo_mapa {
+      font-weight: bold;
+      font-size: 1.5em;
+      padding: 3px;
     }
-    .nivel2b1 {
-      margin-left: 50px;
+    .sub {
+      font-style: italic !important;
+      text-decoration: underline;
     }
-    a:hover {
-      color: black;
+    label {
+      color: rgb(83, 79, 79);
+    }
+    p {
+      padding: 5px;
+      height: 40px;
+    }
+    p:hover {
+      background-color: $mapa_enlace_foco;
+      border-radius: 10px;
+      color: rgb(202, 179, 179);
     }
     a {
       text-decoration: none;
-      color: white;
-    }
-    P {
-      margin-left: auto;
-      margin-right: auto;
-      width: 70%;
-      margin-top: 10px;
-      margin-bottom: 0;
-    }
-    section {
-      font-style: italic;
+      color: black;
+      :hover {
+        font-style: italic;
+      }
     }
   }
 }
